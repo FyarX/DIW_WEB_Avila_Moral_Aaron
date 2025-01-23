@@ -1,0 +1,64 @@
+// Implementación de variables
+@use '../global/variables' as var;
+@use '../base/font' as font;
+
+#footer {
+    display: flex;
+    background-color: var.$secondary;
+    width: 100%;
+    height: 400px;
+    font-family: var.$font-base;
+  
+    section {
+      flex: 1;
+      margin-top: 40px;
+      margin-left: 40px;
+      justify-content: flex-start;
+  
+      p {
+        color: var.$text-footer;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding-top: 10px;
+        font-size: 18px;
+        align-items: center;
+  
+        &:hover {
+          color: var.$text-hover;
+          @include transition(color, 200ms);
+        }
+  
+        i {
+          display: flex;
+          font-size: 50px;
+        }
+      }
+    }
+  
+    .social_media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .social_media_icons {
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }

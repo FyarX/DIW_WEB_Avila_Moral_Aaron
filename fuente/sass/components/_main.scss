@@ -1,0 +1,115 @@
+@use '../global/mixins';
+@use '../global/variables' as var;
+@use '../base/font';
+
+
+main {
+    font-family: 'Roboto', sans-serif;
+    background-color: map-get($colors, bg-main);
+    height: 2000px;
+    width: 100%;
+  
+    h1 {
+      font-family: 'Oleo Script', serif;
+      font-size: 40px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding-top: 40px;
+    }
+  
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      border-bottom: 7px solid map-get($colors, secondary);
+      @include border-radius(10%);
+      width: 150px;
+    }
+  
+    #top_10 {
+      display: flex;
+      margin-top: 10px;
+  
+      @for $i from 1 through 4 {
+        .book_top10:nth-child(#{$i}) {
+          order: $i;
+        }
+      }
+  
+      .top10mark {
+        height: 30px;
+        width: 30px;
+        padding: 6px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        background-color: map-get($colors, secondary);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        @include border-radius(50%);
+      }
+  
+      .subtitle_top {
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+  
+      .book_top10 {
+        margin-top: 20px;
+        height: 375px;
+        width: 270px;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+      }
+    }
+  
+    .fa-circle-chevron-left,
+    .fa-circle-chevron-right {
+      font-size: 50px;
+      margin-top: 175px;
+  
+      &:hover {
+        font-size: 55px;
+        @include transition(font-size);
+      }
+    }
+  
+    .fa-circle-chevron-left {
+      margin-left: 6%;
+    }
+  
+    .fa-circle-chevron-right {
+      margin-right: 6%;
+    }
+  
+    .book_cover {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .book_title {
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .book_author {
+      text-align: center;
+    }
+  
+    button {
+      background-color: map-get($colors, primary);
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+  
+      &:hover {
+        padding: 12px;
+        font-size: 22px;
+        @include transition(all);
+      }
+    }
+  }

@@ -1,0 +1,15 @@
+//! LLAMADA A LOS MODULOS
+
+// Base
+@use 'base/font';
+@use 'base/genStyles';
+
+// Componentes
+@use 'components/body';
+@use 'components/footer';
+@use 'components/header';
+
+// Globales
+@use 'global/variables';
+@use 'global/mixins';
+@use 'global/functions';
