@@ -34,11 +34,6 @@ button {
   box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-  max-width: 2560px;
-}
-
 main {
   font-family: "Roboto", sans-serif;
   background-color: #FFEBCD;
@@ -47,6 +42,11 @@ main {
 }
 main section {
   width: 100%;
+}
+@media (max-width: 1065px) {
+  main article:nth-child(2), main article:nth-child(4) {
+    display: none;
+  }
 }
 main h1 {
   font-family: "Oleo Script", serif;
@@ -169,9 +169,9 @@ main #imprescindibles_tiktok {
 
 #footer {
   display: flex;
+  flex-wrap: wrap;
   background-color: #4D2E1A;
   width: 100%;
-  height: 400px;
   font-family: "Roboto", sans-serif;
 }
 #footer section {
@@ -204,6 +204,12 @@ main #imprescindibles_tiktok {
 #footer section a i {
   display: flex;
   font-size: 50px;
+}
+@media (max-width: 880px) {
+  #footer section a {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
 }
 #footer .social_media {
   display: flex;
@@ -239,10 +245,15 @@ header #logo {
   margin-top: 80px;
   margin-left: 70px;
 }
-@media (max-width: 750px) {
+@media (max-width: 1065px) {
   header #logo {
     width: 70px;
     margin-top: 20px;
+  }
+}
+@media (max-width: 733px) {
+  header #logo {
+    margin-left: 5%;
   }
 }
 header #search_bar {
@@ -266,6 +277,17 @@ header #search_bar {
   margin: 0 auto;
   top: 40px;
 }
+@media (max-width: 420px) {
+  header #search_bar {
+    width: 40%;
+  }
+  header #search_bar::-moz-placeholder {
+    content: "Buscar...";
+  }
+  header #search_bar::placeholder {
+    content: "Buscar...";
+  }
+}
 header .fa-cart-shopping {
   font-size: 25px;
   color: white;
@@ -282,27 +304,56 @@ header .fa-cart-shopping:hover {
   -ms-transition: color 150ms ease;
   -o-transition: color 150ms ease;
 }
+header .fa-bars {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+@media (max-width: 733px) {
+  header .fa-bars {
+    display: flex;
+    float: right;
+    font-size: 28px;
+    color: white;
+    margin-top: 5px;
+    margin-right: 3%;
+  }
+}
 header #navbar {
   display: flex;
   margin: 0 auto;
   width: 100%;
   margin-top: 85px;
   justify-content: space-between;
-  margin-left: 200px;
   padding-left: 10px;
-}
-header #navbar .fa-bars {
-  display: none;
 }
 header #navbar ul {
   display: flex;
-  gap: 4%;
+  gap: 2%;
+  flex-grow: 1;
 }
 header #navbar ul li {
   list-style: none;
+  flex-grow: 1;
+  margin: 0;
 }
 header #navbar ul li:first-child {
-  margin-left: 10%;
+  margin-left: 20%;
+}
+@media (max-width: 1040px) {
+  header #navbar ul li:first-child {
+    margin-left: 3%;
+  }
+}
+header #navbar ul li:last-child {
+  width: 50px;
+  margin-right: 3%;
 }
 header #navbar ul li a {
   font-family: "Roboto", sans-serif;
@@ -317,4 +368,19 @@ header #navbar ul li a:hover {
   -moz-transition: font-size 200ms ease;
   -ms-transition: font-size 200ms ease;
   -o-transition: font-size 200ms ease;
+}
+@media (max-width: 852px) {
+  header #navbar ul {
+    gap: 0;
+  }
+}
+@media (max-width: 733px) {
+  header #navbar {
+    display: none;
+  }
+}
+@media (max-width: 733px) {
+  header {
+    height: 110px;
+  }
 }/*# sourceMappingURL=mainFile.css.map */
