@@ -1,0 +1,348 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/sass/mainFile.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/180c35a309.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <title>La Pila de Libros</title>
+</head>
+<body>
+    <header id="header">
+        <picture>
+            <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/logoLibreria400x400.webp" />
+            <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/logoLibreria500x500.webp" />
+            
+            <source type="image/png"  media="(max-width: 480px)" srcset="img/png/logoLibreria400x400.png" />
+            <source type="image/png"  media="(min-width: 480px)" srcset="img/png/logoLibreria500x500.png" />
+            
+            <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/logoLibreria400x400.jpg" />
+            <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/logoLibreria500x500.jpg" />
+            
+            <img src="img/logoLibreria.jpg" alt="La Pila de libros" id="logo">
+        </picture>
+        <input type="search" name="search_bar" id="search_bar" placeholder="Buscar libros, autores, ISBN...">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <nav id="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href="#">Los + vendidos</a></li>
+                <li><a href="html/recien_llegados.html">Recién llegados</a></li>
+                <li><a href="html/proximamente.html">Próximamente</a></li>
+                <li><a href="html/recomendado.html">Recomendado</a></li>
+                <li><a href="html/categorias.html">Categorías</a></li>
+                <li><a href="html/ofertas.html">Ofertas</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <h1>Los + vendidos</h1>
+        <!-- "El top 10" Section-->
+        <h2 class="subtitle_top">EL TOP 10</h2>
+        <section id="top_10">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <article class="book_article">
+                <div class="top10mark">1</div>
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
+                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
+                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
+                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
+                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
+                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
+                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
+                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+
+                    <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
+                </picture>
+                <p class="book_title">LA ISLA DE LA MUJER DORMIDA</p>
+                <p class="book_author">Arturo Pérez-Reverte</p>
+                <button type="submit">19,90€</button>
+            </article>
+            <article class="book_article">
+                <div class="top10mark">2</div>
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
+                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
+                    <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
+                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
+                    <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
+                    <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+
+                    <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
+                </picture>
+                <p class="book_title">UN ANIMAL SALVAJE</p>
+                <p class="book_author">Joël Dicker</p>
+                <button type="submit">20,90€</button>
+            </article>
+            <article class="book_article">
+                <div class="top10mark">3</div>
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
+                    <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
+                    <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+
+                    <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
+                </picture>
+                <p class="book_title">TODO MUERE</p>
+                <p class="book_author">Juan Gómez-Jurado</p>
+                <button type="submit">23,90€</button>
+            </article>
+            <article class="book_article">
+                <div class="top10mark">4</div>
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
+                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
+                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
+                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
+                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
+                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
+                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
+                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+
+                    <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
+                </picture>
+                <p class="book_title">LA SOMBRA DEL VIENTO</p>
+                <button type="submit">15,90€</button>
+            </article>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </section>
+
+        <!-- "Autores Revelación" Section -->
+        <h2 class="subtitle_revelacion">AUTORES REVELACIÓN</h2>
+        <section id="autores_revelacion">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <article class="book_article">
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
+                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
+                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
+                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
+                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
+                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
+                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
+                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+
+                    <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
+                </picture>
+                <p class="book_title">LA ISLA DE LA MUJER DORMIDA</p>
+                <p class="book_author">Arturo Pérez-Reverte</p>
+                <button type="submit">19,90€</button>
+            </article>
+            <article class="book_article">
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
+                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
+                    <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
+                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
+                    <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
+                    <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+
+                    <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
+                </picture>
+                <p class="book_title">UN ANIMAL SALVAJE</p>
+                <p class="book_author">Joël Dicker</p>
+                <button type="submit">20,90€</button>
+            </article>
+            <article class="book_article">
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
+                    <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
+                    <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+
+                    <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
+                </picture>
+                <p class="book_title">TODO MUERE</p>
+                <p class="book_author">Juan Gómez-Jurado</p>
+                <button type="submit">23,90€</button>
+            </article>
+            <article class="book_article">
+                <picture>
+                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
+                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
+                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
+                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+    
+                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
+                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
+                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
+                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+
+                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
+                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
+                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+
+                    <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
+                </picture>
+                <p class="book_title">LA SOMBRA DEL VIENTO</p>
+                <p class="book_author">Carlos Ruíz Zafón</p>
+                <button type="submit">15,90€</button>
+            </article>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </section>
+
+            <!-- "Imprescindibles de TikTok" Section -->
+            <h2 class="subtitle_impresindibles">IMPRESCINDIBLES DE TIKTOK</h2>
+            <section id="imprescindibles_tiktok">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+                <article class="book_article">
+                    <picture>
+                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
+                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
+                        <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
+                        <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+        
+                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
+                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
+                        <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
+                        <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+    
+                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
+                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
+                        <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
+                        <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+    
+                        <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
+                    </picture>
+                    <p class="book_title">LA ISLA DE LA MUJER DORMIDA</p>
+                    <p class="book_author">Arturo Pérez-Reverte</p>
+                    <button type="submit">19,90€</button>
+                </article>
+                <article class="book_article">
+                    <picture>
+                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
+                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
+                        <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+        
+                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
+                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
+                        <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+    
+                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
+                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
+                        <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+    
+                        <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
+                    </picture>
+                    <p class="book_title">UN ANIMAL SALVAJE</p>
+                    <p class="book_author">Joël Dicker</p>
+                    <button type="submit">20,90€</button>
+                </article>
+                <article class="book_article">
+                    <picture>
+                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
+                        <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+        
+                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
+                        <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+    
+                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
+                        <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+    
+                        <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
+                    </picture>
+                    <p class="book_title">TODO MUERE</p>
+                    <p class="book_author">Juan Gómez-Jurado</p>
+                    <button type="submit">23,90€</button>
+                </article>
+                <article class="book_article">
+                    <picture>
+                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
+                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
+                        <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
+                        <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+        
+                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
+                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
+                        <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
+                        <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+    
+                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
+                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
+                        <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
+                        <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+    
+                        <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
+                    </picture>
+                    <p class="book_title">LA SOMBRA DEL VIENTO</p>
+                    <p class="book_author">Carlos Ruíz Zafón</p>
+                    <button type="submit">15,90€</button>
+                </article>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </section>
+    </main>
+
+    <footer id="footer">
+        <section class="social_media">
+            <p>SÍGUENOS</p>
+            <div class="social_media_icons">  
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <section class="legal_inf">
+            <p>INFORMACIÓN LEGAL</p>
+            <a href="#">Condiciones de uso</a>
+            <a href="#">Política de protección de datos</a>
+            <a href="#">Política de cookies</a>
+        </section>
+
+        <section class="help">
+            <p>AYUDA</p>
+            <a href="#">Preguntas frecuentes</a>
+        </section>
+
+        <section class="contact">
+            <p>CONTACTO</p>
+            <a href="#">Datos de contacto</a>
+            <a href="#">¿Dónde estamos?</a>
+            <a href="#">Sugerencias</a>
+        </section>
+
+    </footer>
+</body>
+</html>

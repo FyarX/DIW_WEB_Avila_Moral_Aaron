@@ -1,0 +1,4 @@
+// Función para agrandar el tamañ
+@function agrandarElemento($size) {
+    @return $size + 2px;
+}

@@ -1,0 +1,137 @@
+@use '../global/variables' as var;
+@use '../base/font';
+@import '../global/mixins';
+@import '../global/functions';
+
+
+main {
+    font-family: 'Roboto', sans-serif;
+    background-color: var.$bg-main;
+    height: 2000px;
+    width: 100%;
+
+    section{
+      width: 100%;
+    }
+
+    h1 {
+      font-family: var.$font-title;
+      font-size: 40px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding-top: 40px;
+    }
+  
+    h2 {
+      font-family: var.$font-base;
+      border-bottom: 7px solid var.$secondary;
+      @include border-radius(10%);
+      width: 150px;
+    }
+  
+    #top_10 {
+      display: flex;
+      margin-top: 10px;
+      }
+  
+      .top10mark {
+        height: 30px;
+        width: 30px;
+        padding: 6px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        background-color: var.$primary;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        @include border-radius(50%);
+      }
+  
+      .subtitle_top {
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+  
+      .book_article {
+        margin-top: 20px;
+        margin-right: 2%;   
+        height: 375px;
+        width: 270px;
+        place-items: center;
+      }
+
+    .fa-circle-chevron-left,
+    .fa-circle-chevron-right {
+      margin-top: 175px;
+  
+      &:hover {
+        font-size: 55px;
+        @include transition(font-size);
+      }
+    }
+  
+    .fa-circle-chevron-left {
+      margin-left: 6%;
+      margin-right: 2%;
+    }
+  
+    .fa-circle-chevron-right {
+      margin-right: 6%;
+      // margin-left: 1%;
+    }
+  
+    .book_cover {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .book_title {
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .book_author {
+      text-align: center;
+    }
+  
+    button {
+      background-color: var.$primary;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+  
+      &:hover {
+        padding: 12px;
+        font-size: agrandarElemento(20px);
+        @include transition(all);
+      }
+    }
+
+    .subtitle_revelacion{
+      float:left;
+      width:260px;
+      margin-top: 200px;
+      margin-left: 50px;
+    }
+  
+    #autores_revelacion{
+      display: flex;
+      margin-top: 250px;
+    }
+
+    .subtitle_impresindibles{
+      float:left;
+      width:330px;
+      margin-top: 200px;
+      margin-left: 50px;
+    }
+
+    #imprescindibles_tiktok{
+      display: flex;
+      margin-top: 250px;
+    }
+  }

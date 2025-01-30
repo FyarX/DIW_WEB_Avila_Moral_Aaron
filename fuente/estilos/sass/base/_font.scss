@@ -1,0 +1,44 @@
+// Mapas de tamaños de texto
+$text-sizes: (
+  small: 12px,
+  base: 16px,
+  btnsize: 20px,
+  iconsize: 50px,
+  large: 20px,
+  xl: 24px,
+  xxl: 40px
+);
+
+// Mixin para poder aplicar tamaños
+@mixin font-size($size) {
+  font-size: map-get($text-sizes, $size);
+}
+
+// Ejemplos de uso
+h1 {
+  @include font-size(xxl);
+}
+
+h2 {
+  @include font-size(xl);
+}
+
+p, a {
+  @include font-size(base);
+}
+
+button {
+  @include font-size(btnsize);
+}
+
+.subtitle {
+  @include font-size(large);
+}
+
+.footer-text {
+  @include font-size(small);
+}
+
+.fa-circle-chevron-left, .fa-circle-chevron-right {
+  @include font-size(iconsize);
+}
