@@ -37,14 +37,27 @@ button {
 main {
   font-family: "Roboto", sans-serif;
   background-color: #FFEBCD;
-  height: 2000px;
-  width: 100%;
-}
-main section {
+  height: 2100px;
   width: 100%;
 }
 @media (max-width: 1065px) {
-  main article:nth-child(2), main article:nth-child(4) {
+  main section {
+    justify-content: center;
+  }
+}
+main section:last-child {
+  margin-bottom: 100px;
+}
+@media (max-width: 1065px) {
+  main article {
+    width: 100%;
+  }
+  main article:nth-child(3), main article:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 1065px) and (max-width: 1065px) {
+  main article:last-child {
     display: none;
   }
 }
@@ -174,11 +187,29 @@ main #imprescindibles_tiktok {
   width: 100%;
   font-family: "Roboto", sans-serif;
 }
+@media (max-width: 880px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #footer section {
   flex: 1;
   margin-top: 40px;
   margin-left: 40px;
+  margin-bottom: 50px;
   justify-content: flex-start;
+}
+@media (max-width: 880px) {
+  #footer section {
+    flex: 1 1 100%;
+    margin: 5px 0;
+    margin-top: 60px !important;
+    text-align: center;
+  }
+  #footer section:last-child {
+    margin-bottom: 40px;
+  }
 }
 #footer section p {
   color: #d8d8d8;

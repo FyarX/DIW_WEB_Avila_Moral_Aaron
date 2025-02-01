@@ -7,19 +7,33 @@
 main {
     font-family: 'Roboto', sans-serif;
     background-color: var.$bg-main;
-    height: 2000px;
+    height: 2100px;
     width: 100%;
   
     section{
-      width: 100%;
+      @media(max-width: 1065px){
+        justify-content: center;
+      }
+
+      &:last-child{
+        margin-bottom: 100px;
+      }
     }
 
     article{
       @media(max-width: 1065px){
-        &:nth-child(2),
+        &:nth-child(3),
         &:nth-child(4){
         display: none;
         }
+
+        @media(max-width: 1065px){
+          &:last-child{
+          display: none;
+          }
+        }
+
+        width: 100%;
       }
     }
 
