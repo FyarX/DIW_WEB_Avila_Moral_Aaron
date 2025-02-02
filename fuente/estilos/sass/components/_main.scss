@@ -7,13 +7,11 @@
 main {
     font-family: 'Roboto', sans-serif;
     background-color: var.$bg-main;
-    height: 2100px;
+    height: 2800px;
     width: 100%;
   
     section{
-      @media(max-width: 1065px){
-        justify-content: center;
-      }
+      justify-content: center;
 
       &:last-child{
         margin-bottom: 100px;
@@ -21,20 +19,23 @@ main {
     }
 
     article{
-      @media(max-width: 1065px){
-        &:nth-child(3),
+      @media(max-width: 1380px){
+        &:nth-child(5){
+        display: none;
+        }
+      }
+
+      @media(max-width: 1000px){
         &:nth-child(4){
         display: none;
         }
+      }
 
-        @media(max-width: 1065px){
-          &:last-child{
+      @media(max-width: 700px){
+          &:nth-child(3){
           display: none;
           }
         }
-
-        width: 100%;
-      }
     }
 
     h1 {
@@ -51,6 +52,18 @@ main {
       border-bottom: 7px solid var.$secondary;
       @include border-radius(10%);
       width: 150px;
+
+      @media(min-width: 2100px){
+        margin-left: 80px !important;
+      }
+
+      @media(max-width: 730px){
+        border-bottom: 4px solid var.$secondary;
+      }
+
+      @media(max-width: 450px){
+        margin-left: 20px !important;
+      }
     }
   
     #top_10 {
@@ -74,6 +87,38 @@ main {
       .subtitle_top {
         margin-left: 50px;
         margin-top: 20px;
+      }
+
+      .subtitle_revelacion,
+      .subtitle_imprescindibles,
+      .subtitle_todos{
+        margin-top: 200px;
+        margin-left: 50px;
+        float: left;
+      }
+
+      .subtitle_revelacion{
+        width:260px;
+      } 
+  
+      .subtitle_imprescindibles{
+        width:330px;
+  
+        @media(max-width: 730px){
+          font-size: 20px;
+          width: 280px;
+        }
+      }
+  
+      .subtitle_todos{
+        width:250px;
+      }
+      
+      #autores_revelacion,
+      #imprescindibles_tiktok,
+      #todos_leen{
+        display: flex;
+        margin-top: 250px;
       }
   
       .book_article {
@@ -131,29 +176,5 @@ main {
         font-size: agrandarElemento(20px);
         @include transition(all);
       }
-    }
-
-    .subtitle_revelacion{
-      float:left;
-      width:260px;
-      margin-top: 200px;
-      margin-left: 50px;
-    }
-  
-    #autores_revelacion{
-      display: flex;
-      margin-top: 250px;
-    }
-
-    .subtitle_impresindibles{
-      float:left;
-      width:330px;
-      margin-top: 200px;
-      margin-left: 50px;
-    }
-
-    #imprescindibles_tiktok{
-      display: flex;
-      margin-top: 250px;
     }
   }
