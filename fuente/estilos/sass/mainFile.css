@@ -47,21 +47,21 @@ main section:last-child {
   margin-bottom: 100px;
 }
 @media (max-width: 1380px) {
-  main section article:nth-child(5) {
+  main article:nth-child(5) {
     display: none;
   }
 }
 @media (max-width: 1000px) {
-  main section article:nth-child(4) {
+  main article:nth-child(4) {
     display: none;
   }
 }
 @media (max-width: 700px) {
-  main section article:nth-child(3) {
+  main article:nth-child(3) {
     display: none;
   }
 }
-main section h1 {
+main h1 {
   font-family: "Oleo Script", serif;
   font-size: 40px;
   display: flex;
@@ -69,7 +69,7 @@ main section h1 {
   justify-content: center;
   padding-top: 40px;
 }
-main section h2 {
+main h2 {
   font-family: "Roboto", sans-serif;
   border-bottom: 7px solid #4D2E1A;
   border-radius: 10%;
@@ -80,25 +80,25 @@ main section h2 {
   width: 150px;
 }
 @media (min-width: 2100px) {
-  main section h2 {
+  main h2 {
     margin-left: 80px !important;
   }
 }
 @media (max-width: 730px) {
-  main section h2 {
+  main h2 {
     border-bottom: 4px solid #4D2E1A;
   }
 }
 @media (max-width: 450px) {
-  main section h2 {
+  main h2 {
     margin-left: 20px !important;
   }
 }
-main section #top_10 {
+main #top_10 {
   display: flex;
   margin-top: 10px;
 }
-main section .top10mark {
+main .top10mark {
   height: 30px;
   width: 30px;
   padding: 6px;
@@ -114,51 +114,51 @@ main section .top10mark {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-main section .subtitle_top {
+main .subtitle_top {
   margin-left: 50px;
   margin-top: 20px;
 }
-main section .subtitle_revelacion,
-main section .subtitle_imprescindibles,
-main section .subtitle_todos {
+main .subtitle_revelacion,
+main .subtitle_imprescindibles,
+main .subtitle_todos {
   margin-top: 200px;
   margin-left: 50px;
   float: left;
 }
-main section .subtitle_revelacion {
+main .subtitle_revelacion {
   width: 260px;
 }
-main section .subtitle_imprescindibles {
+main .subtitle_imprescindibles {
   width: 330px;
 }
 @media (max-width: 730px) {
-  main section .subtitle_imprescindibles {
+  main .subtitle_imprescindibles {
     font-size: 20px;
     width: 280px;
   }
 }
-main section .subtitle_todos {
+main .subtitle_todos {
   width: 250px;
 }
-main section #autores_revelacion,
-main section #imprescindibles_tiktok,
-main section #todos_leen {
+main #autores_revelacion,
+main #imprescindibles_tiktok,
+main #todos_leen {
   display: flex;
   margin-top: 250px;
 }
-main section .book_article {
+main .book_article {
   margin-top: 20px;
   margin-right: 2%;
   height: 375px;
   width: 270px;
   place-items: center;
 }
-main section .fa-circle-chevron-left,
-main section .fa-circle-chevron-right {
+main .fa-circle-chevron-left,
+main .fa-circle-chevron-right {
   margin-top: 175px;
 }
-main section .fa-circle-chevron-left:hover,
-main section .fa-circle-chevron-right:hover {
+main .fa-circle-chevron-left:hover,
+main .fa-circle-chevron-right:hover {
   font-size: 55px;
   transition: font-size 300ms ease;
   -webkit-transition: font-size 300ms ease;
@@ -166,34 +166,34 @@ main section .fa-circle-chevron-right:hover {
   -ms-transition: font-size 300ms ease;
   -o-transition: font-size 300ms ease;
 }
-main section .fa-circle-chevron-left {
+main .fa-circle-chevron-left {
   margin-left: 6%;
   margin-right: 2%;
 }
-main section .fa-circle-chevron-right {
+main .fa-circle-chevron-right {
   margin-right: 6%;
 }
-main section .book_cover {
+main .book_cover {
   height: 100%;
   width: 100%;
 }
-main section .book_title {
+main .book_title {
   width: 100%;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
-main section .book_author {
+main .book_author {
   text-align: center;
 }
-main section button {
+main button {
   background-color: #8B4513;
   color: white;
   padding: 10px;
   font-weight: bold;
   margin-top: 10px;
 }
-main section button:hover {
+main button:hover {
   padding: 12px;
   font-size: 22px;
   transition: all 300ms ease;

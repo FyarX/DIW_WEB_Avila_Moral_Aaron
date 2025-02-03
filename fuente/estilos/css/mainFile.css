@@ -10,8 +10,8 @@ p, a {
   font-size: 16px;
 }
 
-.button {
-  font-size: 18px;
+button {
+  font-size: 20px;
 }
 
 .subtitle {
@@ -22,7 +22,7 @@ p, a {
   font-size: 12px;
 }
 
-.iconsize {
+.fa-circle-chevron-left, .fa-circle-chevron-right {
   font-size: 50px;
 }
 
@@ -37,8 +37,29 @@ p, a {
 main {
   font-family: "Roboto", sans-serif;
   background-color: #FFEBCD;
-  height: 2000px;
+  height: 2800px;
   width: 100%;
+}
+main section {
+  justify-content: center;
+}
+main section:last-child {
+  margin-bottom: 100px;
+}
+@media (max-width: 1380px) {
+  main article:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  main article:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  main article:nth-child(3) {
+    display: none;
+  }
 }
 main h1 {
   font-family: "Oleo Script", serif;
@@ -58,23 +79,26 @@ main h2 {
   -o-border-radius: 10%;
   width: 150px;
 }
+@media (min-width: 2100px) {
+  main h2 {
+    margin-left: 80px !important;
+  }
+}
+@media (max-width: 730px) {
+  main h2 {
+    border-bottom: 4px solid #4D2E1A;
+  }
+}
+@media (max-width: 450px) {
+  main h2 {
+    margin-left: 20px !important;
+  }
+}
 main #top_10 {
   display: flex;
   margin-top: 10px;
 }
-main #top_10 .book_top10:nth-child(1) {
-  order: 1;
-}
-main #top_10 .book_top10:nth-child(2) {
-  order: 2;
-}
-main #top_10 .book_top10:nth-child(3) {
-  order: 3;
-}
-main #top_10 .book_top10:nth-child(4) {
-  order: 4;
-}
-main #top_10 .top10mark {
+main .top10mark {
   height: 30px;
   width: 30px;
   padding: 6px;
@@ -90,16 +114,43 @@ main #top_10 .top10mark {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-main #top_10 .subtitle_top {
+main .subtitle_top {
   margin-left: 50px;
   margin-top: 20px;
 }
-main #top_10 .book_top10 {
+main .subtitle_revelacion,
+main .subtitle_imprescindibles,
+main .subtitle_todos {
+  margin-top: 200px;
+  margin-left: 50px;
+  float: left;
+}
+main .subtitle_revelacion {
+  width: 260px;
+}
+main .subtitle_imprescindibles {
+  width: 330px;
+}
+@media (max-width: 730px) {
+  main .subtitle_imprescindibles {
+    font-size: 20px;
+    width: 280px;
+  }
+}
+main .subtitle_todos {
+  width: 250px;
+}
+main #autores_revelacion,
+main #imprescindibles_tiktok,
+main #todos_leen {
+  display: flex;
+  margin-top: 250px;
+}
+main .book_article {
   margin-top: 20px;
+  margin-right: 2%;
   height: 375px;
   width: 270px;
-  justify-content: center;
-  align-items: center;
   place-items: center;
 }
 main .fa-circle-chevron-left,
@@ -117,6 +168,7 @@ main .fa-circle-chevron-right:hover {
 }
 main .fa-circle-chevron-left {
   margin-left: 6%;
+  margin-right: 2%;
 }
 main .fa-circle-chevron-right {
   margin-right: 6%;
@@ -153,16 +205,34 @@ main button:hover {
 
 #footer {
   display: flex;
+  flex-wrap: wrap;
   background-color: #4D2E1A;
   width: 100%;
-  height: 400px;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 880px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #footer section {
   flex: 1;
   margin-top: 40px;
   margin-left: 40px;
+  margin-bottom: 50px;
   justify-content: flex-start;
+}
+@media (max-width: 880px) {
+  #footer section {
+    flex: 1 1 100%;
+    margin: 5px 0;
+    margin-top: 60px !important;
+    text-align: center;
+  }
+  #footer section:last-child {
+    margin-bottom: 40px;
+  }
 }
 #footer section p {
   color: #d8d8d8;
@@ -189,6 +259,12 @@ main button:hover {
   display: flex;
   font-size: 50px;
 }
+@media (max-width: 880px) {
+  #footer section a {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+}
 #footer .social_media {
   display: flex;
   flex-direction: column;
@@ -214,6 +290,7 @@ header {
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 header #logo {
   float: left;
@@ -222,13 +299,19 @@ header #logo {
   margin-top: 80px;
   margin-left: 70px;
 }
-@media (max-width: 750px) {
+@media (max-width: 1065px) {
   header #logo {
     width: 70px;
     margin-top: 20px;
   }
 }
+@media (max-width: 733px) {
+  header #logo {
+    margin-left: 5%;
+  }
+}
 header #search_bar {
+  margin-left: 25%;
   padding-left: 15px;
   color: white;
   font-size: 16px;
@@ -236,7 +319,6 @@ header #search_bar {
   display: flex;
   height: 35px;
   position: relative;
-  top: 40px;
   align-items: center;
   justify-content: center;
   background-color: #4D2E1A;
@@ -246,6 +328,19 @@ header #search_bar {
   -moz-border-radius: 11px;
   -ms-border-radius: 11px;
   -o-border-radius: 11px;
+  margin: 0 auto;
+  top: 40px;
+}
+@media (max-width: 420px) {
+  header #search_bar {
+    width: 40%;
+  }
+  header #search_bar::-moz-placeholder {
+    content: "Buscar...";
+  }
+  header #search_bar::placeholder {
+    content: "Buscar...";
+  }
 }
 header .fa-cart-shopping {
   font-size: 25px;
@@ -263,18 +358,56 @@ header .fa-cart-shopping:hover {
   -ms-transition: color 150ms ease;
   -o-transition: color 150ms ease;
 }
+header .fa-bars {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+@media (max-width: 733px) {
+  header .fa-bars {
+    display: flex;
+    float: right;
+    font-size: 28px;
+    color: white;
+    margin-top: 5px;
+    margin-right: 3%;
+  }
+}
 header #navbar {
-  margin-top: 75px;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 85px;
   justify-content: space-between;
-  margin-left: 200px;
   padding-left: 10px;
 }
 header #navbar ul {
   display: flex;
   gap: 2%;
+  flex-grow: 1;
 }
 header #navbar ul li {
   list-style: none;
+  flex-grow: 1;
+  margin: 0;
+}
+header #navbar ul li:first-child {
+  margin-left: 20%;
+}
+@media (max-width: 1040px) {
+  header #navbar ul li:first-child {
+    margin-left: 3%;
+  }
+}
+header #navbar ul li:last-child {
+  width: 50px;
+  margin-right: 3%;
 }
 header #navbar ul li a {
   font-family: "Roboto", sans-serif;
@@ -289,4 +422,19 @@ header #navbar ul li a:hover {
   -moz-transition: font-size 200ms ease;
   -ms-transition: font-size 200ms ease;
   -o-transition: font-size 200ms ease;
+}
+@media (max-width: 852px) {
+  header #navbar ul {
+    gap: 0;
+  }
+}
+@media (max-width: 733px) {
+  header #navbar {
+    display: none;
+  }
+}
+@media (max-width: 733px) {
+  header {
+    height: 110px;
+  }
 }/*# sourceMappingURL=mainFile.css.map */

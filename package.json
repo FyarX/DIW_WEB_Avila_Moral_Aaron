@@ -13,7 +13,7 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/fuente/css"
+      "savePath": "/fuente/estilos/css"
     }
   ],
   "liveSassCompile.settings.autoprefix": [
