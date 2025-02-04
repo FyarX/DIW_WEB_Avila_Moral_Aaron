@@ -131,6 +131,7 @@ header {
   
             &:hover {
               font-size: 18px;
+              color: black;
               @include transition(font-size, 200ms);
             }
           }

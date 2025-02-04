@@ -14,24 +14,26 @@
 </head>
 <body>
     <header id="header">
-        <picture>
-            <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/logoLibreria400x400.webp" />
-            <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/logoLibreria500x500.webp" />
-            
-            <source type="image/png"  media="(max-width: 480px)" srcset="img/png/logoLibreria400x400.png" />
-            <source type="image/png"  media="(min-width: 480px)" srcset="img/png/logoLibreria500x500.png" />
-            
-            <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/logoLibreria400x400.jpg" />
-            <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/logoLibreria500x500.jpg" />
-            
-            <img src="img/logoLibreria.jpg" alt="La Pila de libros" id="logo">
-        </picture>
+        <a href="index.html">
+            <picture>
+                <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/logoLibreria400x400.webp" />
+                <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/logoLibreria500x500.webp" />
+                
+                <source type="image/png"  media="(max-width: 480px)" srcset="img/png/logoLibreria400x400.png" />
+                <source type="image/png"  media="(min-width: 480px)" srcset="img/png/logoLibreria500x500.png" />
+                
+                <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/logoLibreria400x400.jpg" />
+                <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/logoLibreria500x500.jpg" />
+                
+                <img src="img/logoLibreria.jpg" alt="La Pila de libros" id="logo">
+            </picture>
+        </a>
         <input type="search" name="search_bar" id="search_bar" placeholder="Buscar libros, autores, ISBN...">
         <i class="fa-solid fa-cart-shopping"></i>
         <i class="fa-solid fa-bars"></i>
         <nav id="navbar">
             <ul>
-                <li><a href="#">Los + vendidos</a></li>
+                <li><a href="index.html">Los + vendidos</a></li>
                 <li><a href="html/recien_llegados.html">Recién llegados</a></li>
                 <li><a href="html/proximamente.html">Próximamente</a></li>
                 <li><a href="html/recomendado.html">Recomendado</a></li>
@@ -40,7 +42,7 @@
               </ul>
         </nav>
     </header>
-    <main id="main">
+    <main>
         <h1>Los + vendidos</h1>
         <!-- "El top 10" Section-->
         <h2 class="subtitle_top">EL TOP 10</h2>

@@ -417,6 +417,7 @@ header #navbar ul li a {
 }
 header #navbar ul li a:hover {
   font-size: 18px;
+  color: black;
   transition: font-size 200ms ease;
   -webkit-transition: font-size 200ms ease;
   -moz-transition: font-size 200ms ease;
