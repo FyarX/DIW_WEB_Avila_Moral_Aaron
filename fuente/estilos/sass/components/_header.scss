@@ -3,8 +3,6 @@
 @use '../base/font';
 @import '../global/mixins';
 
-//?  Definición de variable para aplicar estructura de control
-$elementos: los+vendidos, recienllegados, proximamente, recomendado, categorias, ofertas;
 
 //! Estilos del header
 header {
