@@ -1,55 +1,60 @@
+//? Llamada a elementos externos
 @use '../global/variables' as var;
 @use '../base/font';
 @import '../global/mixins';
 
+//?  Definición de variable para aplicar estructura de control
+$elementos: los+vendidos, recienllegados, proximamente, recomendado, categorias, ofertas;
+
+//! Estilos del header
 header {
     height: 170px;
-    background-color: var.$primary;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    @if var.$primary == #8B4513 { //? Estructura de control
+      background-color: var.$primary;
+    } @else {
+      background-color: var.$secondary;
+    }
+    width: 100%;  
+    position: relative; // Se establece una posición relativa para que los elementos hijos se posicionen respecto a él
   
     #logo {
-      float: left;
+      float: left; // Se alinea a la izquierda
       width: 110px;
-      position: absolute;
-      margin-top: 80px;
+      position: absolute;  // Se establece una posición absoluta para que el logo no afecte al resto de elementos
+      margin-top: 29px;
       margin-left: 70px;
-  
-      @media (max-width: 1065px) {
-        width: 70px;
-        margin-top: 20px;
-      }
 
       @media (max-width: 733px) {
-        margin-left: 5%;
+        margin-left: 5%; // Se reduce el margen izquierdo en pantallas pequeñas
+      }
+
+      @media (max-width: 1065px) {
+        width: 70px; 
+        margin-top: 20px; // Se reduce el margen superior y la barra de navegación se expande completamente
+      }
+
+      @media (min-width: 1700px) {
+        margin-left: 15%;
       }
     }
   
     #search_bar {
       margin-left: 25%;
-      padding-left: 15px;
+      padding-left: 15px; // Se aplica un relleno a la izquierda del input para serparar el texto del borde
       color: white;
       font-size: 16px;
-      width: 50%;
-      display: flex;
+      width: 50%; // Se establece un ancho de la mitad del header
+      display: flex;  
       height: 35px;
-      position: relative;
-      align-items: center;
-      justify-content: center;
+      position: relative; 
       background-color: var.$secondary;
-      border: 1px solid white;
+      border: 1px solid white; // Se aplica un borde blanco al input
       @include border-radius(11px);
-      margin: 0 auto;
+      margin: 0 auto; // Centra el input horizontalmente
       top: 40px;
 
       @media (max-width: 420px) {
-        width: 40%;
-
-        &::placeholder {
-          content: 'Buscar...';
-        }
+        width: 40%; // Se reduce el ancho del input en pantallas muy pequeñas
       }
 
     }
@@ -58,21 +63,25 @@ header {
       font-size: 25px;
       color: white;
       display: flex;
-      float: right;
+      float: right; // Se alinea a la derecha
       margin-top: 12px;
-      margin-right: 15%;
+      margin-right: 15%; // Se aplica un margen a la derecha para separarlo del borde
   
       &:hover {
-        color: black;
+        color: black; // Cambia el color del icono al pasar el ratón por encima
         @include transition(color, 150ms);
+      }
+
+      @media (min-width: 1700px) {
+        margin-right: 20%; // Se aplica un margen extra en pantallas muy grandes
       }
     }
     
     .fa-bars {
-      display: none;
+      display: none; // Se oculta el icono de menú en pantallas grandes
       position: absolute;
       right: 10px;
-      top: 50%;
+      top: 50%; // Se centra verticalmente el icono
       transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
@@ -81,12 +90,12 @@ header {
 
 
       @media(max-width: 733px){
-        display: flex;
-        float: right;
+        display: flex; // Se muestra el icono de menú en pantallas pequeñas
+        float: right; // Se alinea a la derecha
         font-size: 28px;
         color: white;
         margin-top: 5px;
-        margin-right: 3%;
+        margin-right: 3%; // Se aplica un margen a la derecha para separarlo del carrito
 
       }
     }
@@ -94,60 +103,61 @@ header {
 
     #navbar {
       display: flex;
-      margin: 0 auto;
-      width: 100%;
+      margin: 0 auto; // Centra el menú horizontalmente
+      width: 100%; 
       margin-top: 85px;
-      justify-content: space-between;
-
       padding-left: 10px;
+    
       ul {
-        display: flex;
-        gap: 2%;
-        flex-grow: 1;
+        display: flex; // Los elementos del menú se alinean horizontalmente
+        flex-grow: 1; // Cada elemento del menú ocupa el mismo espacio
   
         li {
           list-style: none;
-          flex-grow: 1;
+          flex-grow: 1; // Cada elemento del menú ocupa el mismo espacio
           margin: 0;
 
           &:first-child {
-            margin-left: 20%;
+            margin-left: 20%; // Se le aplica un margen extra al primer hijo para que no quede pegado al logo
 
-            @media (max-width: 1040px) {
-              margin-left: 3%;
+            @media (max-width: 1065px) {
+              margin-left: 3%; // Al no estar el logo a la izquierda en esta resolución, se reduce el margen
             }
           }
           
           &:last-child {
             width:50px;
-            margin-right: 3%;
+            margin-right: 3%; // Se le aplica un margen extra al último hijo para que no quede pegado al carrito
           }
 
           a {
             font-family: var.$font-base;
             text-decoration: none;
             color: white;
-            margin-right: 25px;
   
             &:hover {
-              font-size: 18px;
-              color: black;
+              font-size: 18px; // Al pasar el ratón por encima, el tamaño de la fuente aumenta
+              color: black; // Cambia el color del texto al pasar el ratón por encima
               @include transition(font-size, 200ms);
             }
           }
         }
         @media(max-width: 852px){
-          gap: 0;
+          gap: 0; // Se elimina el espacio entre elementos
         }
       }
 
       @media(max-width: 733px){
-        display: none;
+        display: none; // En pantallas pequeñas, el menú se oculta 
+      }
+
+      @media(min-width: 1700px){
+        width: 80%; // Se reduce el ancho del menú en pantallas muy grandes
       }
     }
 
     @media (max-width: 733px) {
-      height: 110px;
+      height: 110px; // Se reduce la altura del header en pantallas pequeñas
     }
   }
   

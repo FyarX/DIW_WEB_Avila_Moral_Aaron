@@ -14,23 +14,25 @@
 </head>
 <body>
     <header id="header">
-        <a href="index.html">
+        <!-- Imagen que actúa como logo y al clicar sobre ella manda a la página de inicio -->
+        <a href="index.html"> 
             <picture>
-                <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/logoLibreria400x400.webp" />
-                <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/logoLibreria500x500.webp" />
+                <source type="image/webp"  srcset="img/webp/logoLibreria400x400.webp" />
                 
-                <source type="image/png"  media="(max-width: 480px)" srcset="img/png/logoLibreria400x400.png" />
-                <source type="image/png"  media="(min-width: 480px)" srcset="img/png/logoLibreria500x500.png" />
+                <source type="image/png"  srcset="img/png/logoLibreria400x400.png" />
                 
-                <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/logoLibreria400x400.jpg" />
-                <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/logoLibreria500x500.jpg" />
-                
+                <source type="image/jpg"  srcset="img/jpg/logoLibreria400x400.jpg" />
+
                 <img src="img/logoLibreria.jpg" alt="La Pila de libros" id="logo">
             </picture>
         </a>
+        <!-- Barra de búsqueda -->
         <input type="search" name="search_bar" id="search_bar" placeholder="Buscar libros, autores, ISBN...">
+        <!-- Icono de carrito de compra -->
         <i class="fa-solid fa-cart-shopping"></i>
+        <!-- Icono de menú desplegable -->
         <i class="fa-solid fa-bars"></i>
+        <!-- Menú de navegación -->
         <nav id="navbar">
             <ul>
                 <li><a href="index.html">Los + vendidos</a></li>
@@ -49,22 +51,14 @@
         <section id="top_10">
             <i class="fa-solid fa-circle-chevron-left"></i>
             <article class="book_article">
-                <div class="top10mark">1</div>
+                <!-- Marca de pertenencia al top 10 de libros -->
+                <span class="top10mark">1</span>
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
-                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
-                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
-                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+                    <source type="image/webp"  srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
-                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
-                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
-                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+                    <source type="image/png" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
-                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
-                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
 
                     <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
                 </picture>
@@ -73,19 +67,14 @@
                 <button type="submit">19,90€</button>
             </article>
             <article class="book_article">
-                <div class="top10mark">2</div>
+                <!-- Marca de pertenencia al top 10 de libros -->
+                <span class="top10mark">2</span>
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
-                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
-                    <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+                    <source type="image/webp" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
-                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
-                    <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+                    <source type="image/png" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
-                    <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
 
                     <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
                 </picture>
@@ -94,16 +83,14 @@
                 <button type="submit">20,90€</button>
             </article>
             <article class="book_article">
-                <div class="top10mark">3</div>
+                <!-- Marca de pertenencia al top 10 de libros -->
+                <span class="top10mark">3</span>
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
-                    <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+                    <source type="image/webp" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
-                    <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+                    <source type="image/png" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
 
                     <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
                 </picture>
@@ -112,22 +99,14 @@
                 <button type="submit">23,90€</button>
             </article>
             <article class="book_article">
-                <div class="top10mark">4</div>
+                <!-- Marca de pertenencia al top 10 de libros -->
+                <span class="top10mark">4</span>
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
-                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
-                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
-                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+                    <source type="image/webp" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
-                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
-                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
-                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+                    <source type="image/png" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
-                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
-                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
 
                     <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
                 </picture>
@@ -143,20 +122,11 @@
         <section id="autores_revelacion">
             <i class="fa-solid fa-circle-chevron-left"></i>
             <article class="book_article">
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
-                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
-                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
-                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+                    <source type="image/webp" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
-                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
-                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
-                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+                    <source type="image/png" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
-                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
-                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
 
                     <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
                 </picture>
@@ -166,17 +136,11 @@
             </article>
             <article class="book_article">
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
-                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
-                    <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+                    <source type="image/webp" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
-                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
-                    <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+                    <source type="image/png" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
-                    <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
 
                     <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
                 </picture>
@@ -186,14 +150,11 @@
             </article>
             <article class="book_article">
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
-                    <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+                    <source type="image/webp" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
-                    <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+                    <source type="image/png" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
 
                     <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
                 </picture>
@@ -203,20 +164,11 @@
             </article>
             <article class="book_article">
                 <picture>
-                    <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
-                    <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
-                    <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
-                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+                    <source type="image/webp" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
     
-                    <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
-                    <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
-                    <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
-                    <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+                    <source type="image/png" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
 
-                    <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
-                    <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
-                    <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
-                    <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+                    <source type="image/jpg" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
 
                     <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
                 </picture>
@@ -233,20 +185,11 @@
                 <i class="fa-solid fa-circle-chevron-left"></i>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
-                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
-                        <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
-                        <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+                        <source type="image/webp" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
-                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
-                        <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
-                        <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+                        <source type="image/png" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
-                        <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
-                        <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
     
                         <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
                     </picture>
@@ -256,17 +199,11 @@
                 </article>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
-                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
-                        <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+                        <source type="image/webp" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
-                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
-                        <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+                        <source type="image/png" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
-                        <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
     
                         <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
                     </picture>
@@ -276,14 +213,11 @@
                 </article>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
-                        <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+                        <source type="image/webp" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
-                        <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+                        <source type="image/png" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
     
                         <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
                     </picture>
@@ -293,20 +227,11 @@
                 </article>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
-                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
-                        <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
-                        <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+                        <source type="image/webp" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
-                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
-                        <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
-                        <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+                        <source type="image/png" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
-                        <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
-                        <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
     
                         <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
                     </picture>
@@ -324,20 +249,11 @@
                 <i class="fa-solid fa-circle-chevron-left"></i>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
-                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/islaMujerDormida_APReverte600x927.webp" />
-                        <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1000x1544.webp" />
-                        <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/islaMujerDormida_APReverte1100x1698.webp" />
+                        <source type="image/webp" srcset="img/webp/islaMujerDormida_APReverte400x617.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
-                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/islaMujerDormida_APReverte600x927.png" />
-                        <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1000x1544.png" />
-                        <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/islaMujerDormida_APReverte1100x1698.png" />
+                        <source type="image/png" srcset="img/png/islaMujerDormida_APReverte400x617.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/islaMujerDormida_APReverte600x927.jpg" />
-                        <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1000x1544.jpg" />
-                        <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/islaMujerDormida_APReverte400x617.jpg" />
     
                         <img src="img/jpg/islaMujerDormida_APReverte1100x1698.jpg" alt="La isla de la mujer dormida" class="book_cover">
                     </picture>
@@ -347,17 +263,11 @@
                 </article>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
-                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker600x948.webp" />
-                        <source type="image/webp"  media="(min-width: 768px)" srcset="img/webp/animalSalvaje_JoelDicker800x1264.webp" />
+                        <source type="image/webp" srcset="img/webp/animalSalvaje_JoelDicker400x632.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
-                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker600x948.png" />
-                        <source type="image/png"  media="(min-width: 768px)" srcset="img/png/animalSalvaje_JoelDicker800x1264.png" />
+                        <source type="image/png" srcset="img/png/animalSalvaje_JoelDicker400x632.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker600x948.jpg" />
-                        <source type="image/jpg"  media="(min-width: 768px)" srcset="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/animalSalvaje_JoelDicker400x632.jpg" />
     
                         <img src="img/jpg/animalSalvaje_JoelDicker800x1264.jpg" alt="Un animal salvaje" class="book_cover">
                     </picture>
@@ -367,14 +277,11 @@
                 </article>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
-                        <source type="image/webp"  media="(min-width: 480px)" srcset="img/webp/todoMuere_JGomezJurado587x896.webp" />
+                        <source type="image/webp" srcset="img/webp/todoMuere_JGomezJurado400x611.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
-                        <source type="image/png"  media="(min-width: 480px)" srcset="img/png/todoMuere_JGomezJurado587x896.png" />
+                        <source type="image/png" srcset="img/png/todoMuere_JGomezJurado400x611.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px)" srcset="img/jpg/todoMuere_JGomezJurado587x896.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/todoMuere_JGomezJurado400x611.jpg" />
     
                         <img src="img/jpg/todoMuere_JGomezJurado587x896.jpg" alt="Todo Muere" class="book_cover">
                     </picture>
@@ -384,20 +291,11 @@
                 </article>
                 <article class="book_article">
                     <picture>
-                        <source type="image/webp"  media="(max-width: 480px)" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
-                        <source type="image/webp"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/webp/sombraViento_CRuizZafon1000x1522.webp" />
-                        <source type="image/webp"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon1500x2283.webp" />
-                        <source type="image/webp"  media="(min-width: 1200px)" srcset="img/webp/sombraViento_CRuizZafon2000x3044.webp" />
+                        <source type="image/webp" srcset="img/webp/sombraViento_CRuizZafon400x609.webp" />
         
-                        <source type="image/png"  media="(max-width: 480px)" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
-                        <source type="image/png"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/png/sombraViento_CRuizZafon1000x1522.png" />
-                        <source type="image/png"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon1500x2283.png" />
-                        <source type="image/png"  media="(min-width: 1200px)" srcset="img/png/sombraViento_CRuizZafon2000x3044.png" />
+                        <source type="image/png" srcset="img/png/sombraViento_CRuizZafon400x609.png" />
     
-                        <source type="image/jpg"  media="(max-width: 480px)" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
-                        <source type="image/jpg"  media="(min-width: 480px) and (max-width: 768px)" srcset="img/jpg/sombraViento_CRuizZafon1000x1522.jpg" />
-                        <source type="image/jpg"  media="(min-width: 768px) and (max-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon1500x2283.jpg" />
-                        <source type="image/jpg"  media="(min-width: 1200px)" srcset="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" />
+                        <source type="image/jpg" srcset="img/jpg/sombraViento_CRuizZafon400x609.jpg" />
     
                         <img src="img/jpg/sombraViento_CRuizZafon2000x3044.jpg" alt="La sombra del viento" class="book_cover">
                     </picture>
@@ -412,11 +310,11 @@
     <footer id="footer">
         <section class="social_media">
             <p>SÍGUENOS</p>
-            <div class="social_media_icons">  
+            <nav class="social_media_icons">  
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            </nav>
         </section>
 
         <section class="legal_inf">
