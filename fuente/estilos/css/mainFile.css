@@ -64,9 +64,7 @@ main section:last-child {
 main h1 {
   font-family: "Oleo Script", serif;
   font-size: 40px;
-  display: flex;
   text-align: center;
-  justify-content: center;
   padding-top: 40px;
 }
 main h2 {
@@ -79,9 +77,9 @@ main h2 {
   -o-border-radius: 10%;
   width: 150px;
 }
-@media (min-width: 2100px) {
+@media (max-width: 450px) {
   main h2 {
-    margin-left: 80px !important;
+    margin-left: 20px !important;
   }
 }
 @media (max-width: 730px) {
@@ -89,9 +87,19 @@ main h2 {
     border-bottom: 4px solid #4D2E1A;
   }
 }
-@media (max-width: 450px) {
+@media (min-width: 1800px) {
   main h2 {
-    margin-left: 20px !important;
+    margin-left: 10% !important;
+  }
+}
+@media (min-width: 2200px) {
+  main h2 {
+    margin-left: 12% !important;
+  }
+}
+@media (min-width: 2400px) {
+  main h2 {
+    margin-left: 14% !important;
   }
 }
 main #top_10 {
@@ -118,9 +126,7 @@ main .subtitle_top {
   margin-left: 50px;
   margin-top: 20px;
 }
-main .subtitle_revelacion,
-main .subtitle_imprescindibles,
-main .subtitle_todos {
+main .subtitle_base, main .subtitle_todos, main .subtitle_imprescindibles, main .subtitle_revelacion {
   margin-top: 200px;
   margin-left: 50px;
   float: left;
@@ -288,16 +294,19 @@ header {
   height: 170px;
   background-color: #8B4513;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 header #logo {
   float: left;
   width: 110px;
   position: absolute;
-  margin-top: 80px;
+  margin-top: 29px;
   margin-left: 70px;
+}
+@media (max-width: 733px) {
+  header #logo {
+    margin-left: 5%;
+  }
 }
 @media (max-width: 1065px) {
   header #logo {
@@ -305,9 +314,9 @@ header #logo {
     margin-top: 20px;
   }
 }
-@media (max-width: 733px) {
+@media (min-width: 1700px) {
   header #logo {
-    margin-left: 5%;
+    margin-left: 15%;
   }
 }
 header #search_bar {
@@ -319,8 +328,6 @@ header #search_bar {
   display: flex;
   height: 35px;
   position: relative;
-  align-items: center;
-  justify-content: center;
   background-color: #4D2E1A;
   border: 1px solid white;
   border-radius: 11px;
@@ -334,12 +341,6 @@ header #search_bar {
 @media (max-width: 420px) {
   header #search_bar {
     width: 40%;
-  }
-  header #search_bar::-moz-placeholder {
-    content: "Buscar...";
-  }
-  header #search_bar::placeholder {
-    content: "Buscar...";
   }
 }
 header .fa-cart-shopping {
@@ -357,6 +358,11 @@ header .fa-cart-shopping:hover {
   -moz-transition: color 150ms ease;
   -ms-transition: color 150ms ease;
   -o-transition: color 150ms ease;
+}
+@media (min-width: 1700px) {
+  header .fa-cart-shopping {
+    margin-right: 20%;
+  }
 }
 header .fa-bars {
   display: none;
@@ -384,12 +390,58 @@ header #navbar {
   margin: 0 auto;
   width: 100%;
   margin-top: 85px;
-  justify-content: space-between;
   padding-left: 10px;
+}
+header #navbar .nav-item-losvendidos {
+  gap: 5%;
+}
+@media (min-width: 1500px) {
+  header #navbar .nav-item-losvendidos {
+    gap: 1%;
+  }
+}
+header #navbar .nav-item-recienllegados {
+  gap: 5%;
+}
+@media (min-width: 1500px) {
+  header #navbar .nav-item-recienllegados {
+    gap: 1%;
+  }
+}
+header #navbar .nav-item-proximamente {
+  gap: 5%;
+}
+@media (min-width: 1500px) {
+  header #navbar .nav-item-proximamente {
+    gap: 1%;
+  }
+}
+header #navbar .nav-item-recomendado {
+  gap: 5%;
+}
+@media (min-width: 1500px) {
+  header #navbar .nav-item-recomendado {
+    gap: 1%;
+  }
+}
+header #navbar .nav-item-categorias {
+  gap: 5%;
+}
+@media (min-width: 1500px) {
+  header #navbar .nav-item-categorias {
+    gap: 1%;
+  }
+}
+header #navbar .nav-item-ofertas {
+  gap: 5%;
+}
+@media (min-width: 1500px) {
+  header #navbar .nav-item-ofertas {
+    gap: 1%;
+  }
 }
 header #navbar ul {
   display: flex;
-  gap: 2%;
   flex-grow: 1;
 }
 header #navbar ul li {
@@ -400,7 +452,7 @@ header #navbar ul li {
 header #navbar ul li:first-child {
   margin-left: 20%;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1065px) {
   header #navbar ul li:first-child {
     margin-left: 3%;
   }
@@ -413,10 +465,10 @@ header #navbar ul li a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: white;
-  margin-right: 25px;
 }
 header #navbar ul li a:hover {
   font-size: 18px;
+  color: black;
   transition: font-size 200ms ease;
   -webkit-transition: font-size 200ms ease;
   -moz-transition: font-size 200ms ease;
@@ -431,6 +483,11 @@ header #navbar ul li a:hover {
 @media (max-width: 733px) {
   header #navbar {
     display: none;
+  }
+}
+@media (min-width: 1700px) {
+  header #navbar {
+    width: 80%;
   }
 }
 @media (max-width: 733px) {
