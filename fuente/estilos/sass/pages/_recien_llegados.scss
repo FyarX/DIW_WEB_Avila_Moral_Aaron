@@ -1,0 +1,56 @@
+.new_mark{
+    background-color: green;
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: translate(0%, 50%);
+    -webkit-transform: translate(0%, 50%);
+    -moz-transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+    -o-transform: translate(0%, 50%);
+}
+
+
+.subtitle_base{
+    margin-top: 200px;
+    margin-left: 50px;
+
+  }
+
+  .subtitle_ultimo{
+    margin-left: 50px;
+    margin-top: 20px;
+    width:330px; // Ajusta el ancho del contenedor a la cantidad de texto
+  }
+
+  .subtitle_thriller{
+    @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
+    width:260px; // Ajusta el ancho del contenedor a la cantidad de texto
+  } 
+
+  .subtitle_fantasia{
+    @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
+    width:265px; // Ajusta el ancho del contenedor a la cantidad de texto
+
+    // @media(max-width: 730px){ // En pantallas pequeñas se reduce el tamaño del texto
+    //   font-size: 20px;
+    //   width: 280px; 
+    // }
+  }
+
+  .subtitle_noficcion{
+    @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
+    width:285px; // Ajusta el ancho del contenedor a la cantidad de texto
+  }
+  
+  #ultimo_semana,
+  #novedades_thriller,
+  #novedades_fantasia,
+  #novedades_noficcion{
+    display: flex;
+    margin-top: 10px;
+  }

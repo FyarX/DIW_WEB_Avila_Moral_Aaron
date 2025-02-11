@@ -3,7 +3,7 @@
 // Base
 @use 'base/font';
 @use 'base/general';
-
+    
 // Componentes
 @use 'components/main';
 @use 'components/footer';
@@ -13,3 +13,10 @@
 @use 'global/variables';
 @use 'global/mixins';
 @use 'global/functions';
+
+// Paginas
+@use 'pages/categorias';
+@use 'pages/ofertas';
+@use 'pages/proximamente';
+@use 'pages/recien_llegados';
+@use 'pages/recomendado';
