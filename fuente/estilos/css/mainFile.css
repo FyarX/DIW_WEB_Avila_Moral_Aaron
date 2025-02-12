@@ -35,13 +35,20 @@ button {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
   font-family: "Roboto", sans-serif;
   background-color: #FFEBCD;
-  height: 2800px;
+  height: 100%;
   width: 100%;
 }
 main section {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 3%;
 }
 main section:last-child {
   margin-bottom: 100px;
@@ -65,42 +72,18 @@ main h1 {
   font-family: "Oleo Script", serif;
   font-size: 40px;
   text-align: center;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 main h2 {
   font-family: "Roboto", sans-serif;
   border-bottom: 7px solid #4D2E1A;
+  align-self: flex-start;
   border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
   width: 150px;
-}
-@media (max-width: 450px) {
-  main h2 {
-    margin-left: 20px !important;
-  }
-}
-@media (max-width: 730px) {
-  main h2 {
-    border-bottom: 4px solid #4D2E1A;
-  }
-}
-@media (min-width: 1800px) {
-  main h2 {
-    margin-left: 10% !important;
-  }
-}
-@media (min-width: 2200px) {
-  main h2 {
-    margin-left: 12% !important;
-  }
-}
-@media (min-width: 2400px) {
-  main h2 {
-    margin-left: 14% !important;
-  }
 }
 main #top_10 {
   display: flex;
@@ -122,12 +105,11 @@ main .top10mark {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-main .subtitle_ultimo {
+main .subtitle_ult {
   margin-left: 50px;
   margin-top: 20px;
 }
 main .subtitle_base, main .subtitle_todos, main .subtitle_imprescindibles, main .subtitle_revelacion {
-  margin-top: 200px;
   margin-left: 50px;
   float: left;
 }
@@ -146,22 +128,9 @@ main .subtitle_imprescindibles {
 main .subtitle_todos {
   width: 250px;
 }
-main #autores_revelacion,
-main #imprescindibles_tiktok,
-main #todos_leen {
-  display: flex;
-  margin-top: 250px;
-}
 main .book_article {
   margin-top: 20px;
-  margin-right: 2%;
-  height: 375px;
-  width: 270px;
   place-items: center;
-}
-main .fa-circle-chevron-left,
-main .fa-circle-chevron-right {
-  margin-top: 175px;
 }
 main .fa-circle-chevron-left:hover,
 main .fa-circle-chevron-right:hover {
@@ -173,15 +142,14 @@ main .fa-circle-chevron-right:hover {
   -o-transition: font-size 300ms ease;
 }
 main .fa-circle-chevron-left {
-  margin-left: 6%;
-  margin-right: 2%;
+  align-items: center;
 }
 main .fa-circle-chevron-right {
-  margin-right: 6%;
+  align-items: center;
 }
 main .book_cover {
-  height: 100%;
-  width: 100%;
+  height: 375px;
+  width: 270px;
 }
 main .book_title {
   width: 100%;
@@ -448,6 +416,48 @@ header #navbar ul li a:hover {
   }
 }
 
+.proximamente_article {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 3%;
+}
+.proximamente_article .book_cover {
+  height: 320px;
+  width: 215px;
+  height: auto;
+  border-radius: 5px;
+}
+.proximamente_article .book_title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.proximamente_article .book_author {
+  font-size: 1rem;
+}
+.proximamente_article .release_date {
+  background: #5a3314;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 5px 12px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.proximamente_article .release_date::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #5a3314;
+}
 .new_mark {
   background-color: green;
   position: absolute;

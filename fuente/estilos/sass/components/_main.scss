@@ -9,13 +9,20 @@ $colorFondo: var.$bg-main;
 
 //! Estilos de la página principal
 main {
+    display: flex;
+    flex-direction: column; 
+    gap: 250px; // Espacio entre las secciones
     font-family: 'Roboto', sans-serif;
     background-color: #{$colorFondo};
-    height: 2800px;
+    height: 100%;
     width: 100%;
   
     section{
+      display: flex;
+      flex-direction: r;
       justify-content: center;
+      align-items: center;
+      gap: 3%; // Espacio entre los elementos
 
       &:last-child{
         margin-bottom: 100px; // Aplica un margen solo a la última sección
@@ -46,34 +53,35 @@ main {
       font-family: var.$font-title;
       font-size: 40px;
       text-align: center;
-      padding-top: 40px;
+      margin-top: 40px;
     }
   
     h2 {
       font-family: var.$font-base;
       border-bottom: 7px solid var.$secondary;
+      align-self: flex-start; // Alinea el texto arriba a la izquierda
       @include border-radius(10%);
       width: 150px;
 
-      @media(max-width: 450px){
-        margin-left: 20px !important;  // El margen se reduce en pantallas muy pequeñas para que sea agradable
-      }
+      // @media(max-width: 450px){
+      //   margin-left: 20px !important;  // El margen se reduce en pantallas muy pequeñas para que sea agradable
+      // }
 
-      @media(max-width: 730px){
-        border-bottom: 4px solid var.$secondary; // En pantallas pequeñas se reduce el grosor del borde
-      }
+      // @media(max-width: 730px){
+      //   border-bottom: 4px solid var.$secondary; // En pantallas pequeñas se reduce el grosor del borde
+      // }
 
-      @media(min-width: 1800px){ 
-        margin-left: 10% !important; // El margen se ajusta en pantallas muy grandes
-      }
+      // @media(min-width: 1800px){ 
+      //   margin-left: 10% !important; // El margen se ajusta en pantallas muy grandes
+      // }
 
-      @media(min-width: 2200px){ 
-        margin-left: 12% !important; // El margen se ajusta en pantallas muy grandes
-      }
+      // @media(min-width: 2200px){ 
+      //   margin-left: 12% !important; // El margen se ajusta en pantallas muy grandes
+      // }
 
-      @media(min-width: 2400px){ 
-        margin-left: 14% !important; // El margen se ajusta en pantallas muy grandes
-      }
+      // @media(min-width: 2400px){ 
+      //   margin-left: 14% !important; // El margen se ajusta en pantallas muy grandes
+      // }
     }
   
     #top_10 {
@@ -94,14 +102,13 @@ main {
         @include border-radius(50%);
       }
       
-      .subtitle_ultimo {
+      .subtitle_ult {
         margin-left: 50px;
         margin-top: 20px;
       }
 
       //? Creación de clase auxiliar para heredar en el resto de subtítulos
       .subtitle_base{
-        margin-top: 200px;
         margin-left: 50px;
         float: left; // Alinea los elementos a la izquierda
       }
@@ -125,25 +132,14 @@ main {
         @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
         width:250px; // Ajusta el ancho del contenedor a la cantidad de texto
       }
-      
-      #autores_revelacion,
-      #imprescindibles_tiktok,
-      #todos_leen{
-        display: flex;
-        margin-top: 250px;
-      }
   
       .book_article {
-        margin-top: 20px;
-        margin-right: 2%;   
-        height: 375px;
-        width: 270px;
+        margin-top: 20px;  
         place-items: center; // Centra los elementos horizontal y verticalmente
       }
 
     .fa-circle-chevron-left,
     .fa-circle-chevron-right {
-      margin-top: 175px;
   
       &:hover {
         font-size: 55px; // Aumenta el tamaño del icono al pasar el ratón por encima
@@ -152,17 +148,16 @@ main {
     }
   
     .fa-circle-chevron-left {
-      margin-left: 6%;
-      margin-right: 2%;
+      align-items: center;
     }
   
     .fa-circle-chevron-right {
-      margin-right: 6%;
+      align-items: center;
     }
   
     .book_cover {
-      height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
-      width: 100%; // Ajusta el ancho de la imagen al 100% del contenedor
+      height: 375px;
+      width: 270px;
     }
   
     .book_title {
