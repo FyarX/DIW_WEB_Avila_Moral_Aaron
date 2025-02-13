@@ -11,42 +11,16 @@ $colorFondo: var.$bg-main;
 main {
     display: flex;
     flex-direction: column; 
-    gap: 250px; // Espacio entre las secciones
+    gap: 100px; // Espacio entre las secciones
     font-family: 'Roboto', sans-serif;
     background-color: #{$colorFondo};
-    height: 100%;
+    height: 2850px;
     width: 100%;
   
     section{
       display: flex;
-      flex-direction: r;
       justify-content: center;
       align-items: center;
-      gap: 3%; // Espacio entre los elementos
-
-      &:last-child{
-        margin-bottom: 100px; // Aplica un margen solo a la última sección
-      }
-    }
-
-    article{
-      @media(max-width: 1380px){
-        &:nth-child(5){
-        display: none; // Oculta el cuarto artículo en pantallas menores a 1380px
-        }
-      }
-
-      @media(max-width: 1000px){
-        &:nth-child(4){
-        display: none; // Oculta el tercer artículo en pantallas menores a 1000px
-        }
-      }
-
-      @media(max-width: 700px){
-          &:nth-child(3){
-          display: none; // Oculta el segundo artículo en pantallas menores a 700px
-          }
-        }
     }
 
     h1 {
@@ -62,32 +36,21 @@ main {
       align-self: flex-start; // Alinea el texto arriba a la izquierda
       @include border-radius(10%);
       width: 150px;
-
-      // @media(max-width: 450px){
-      //   margin-left: 20px !important;  // El margen se reduce en pantallas muy pequeñas para que sea agradable
-      // }
-
-      // @media(max-width: 730px){
-      //   border-bottom: 4px solid var.$secondary; // En pantallas pequeñas se reduce el grosor del borde
-      // }
-
-      // @media(min-width: 1800px){ 
-      //   margin-left: 10% !important; // El margen se ajusta en pantallas muy grandes
-      // }
-
-      // @media(min-width: 2200px){ 
-      //   margin-left: 12% !important; // El margen se ajusta en pantallas muy grandes
-      // }
-
-      // @media(min-width: 2400px){ 
-      //   margin-left: 14% !important; // El margen se ajusta en pantallas muy grandes
-      // }
     }
   
-    #top_10 {
+    .main_sections {
       display: flex; // Alinea los elementos horizontalmente
-      margin-top: 10px;
-      }
+      flex-direction: column; // Alinea los elementos verticalmente
+      gap: 10px;
+      max-width: 1685px;
+      margin: 0px auto;
+      width: 100%;
+
+      section:first-of-type {
+        align-self: flex-start; // Alinea la primera sección a la izquierda
+        gap: 50px;
+      }   
+    }
   
       .top10mark {
         height: 30px;
@@ -98,18 +61,20 @@ main {
         color: white;
         background-color: var.$primary;
         position: absolute; // Posiciona el elemento de forma absoluta en relación al contenedor
-        transform: translate(-50%, -50%);
+        transform: translate(-450%, -625%);
         @include border-radius(50%);
+
+        @media(max-width: 420px){
+          transform: translate(-325%, -510%);
+        }
       }
       
       .subtitle_ult {
-        margin-left: 50px;
         margin-top: 20px;
       }
 
       //? Creación de clase auxiliar para heredar en el resto de subtítulos
       .subtitle_base{
-        margin-left: 50px;
         float: left; // Alinea los elementos a la izquierda
       }
 
@@ -134,8 +99,28 @@ main {
       }
   
       .book_article {
+        display: grid;
         margin-top: 20px;  
         place-items: center; // Centra los elementos horizontal y verticalmente
+
+        @media(max-width: 1450px){
+          &:nth-of-type(7) {
+            display: none; 
+        }
+        }
+    
+        @media(max-width: 1060px){
+          &:nth-of-type(5) {
+            display: none; 
+        }
+        }
+    
+        @media(max-width: 750px){
+          &:nth-of-type(3) {
+            display: none; 
+        }
+          }
+        
       }
 
     .fa-circle-chevron-left,
@@ -149,15 +134,28 @@ main {
   
     .fa-circle-chevron-left {
       align-items: center;
+
+      @media(max-width: 420px){
+        margin-left: 3%;
+      }
     }
   
     .fa-circle-chevron-right {
       align-items: center;
+
+      @media(max-width: 420px){
+        margin-right: 3%;
+      }
     }
   
     .book_cover {
       height: 375px;
       width: 270px;
+
+      @media(max-width: 420px){
+        height: 305px;
+        width: 200px;
+      }
     }
   
     .book_title {
@@ -165,6 +163,10 @@ main {
       font-size: 20px;
       text-align: center;
       font-weight: bold;
+
+      @media(max-width: 420px){
+        width: 80%;
+      }
     }
   
     .book_author {
@@ -184,4 +186,84 @@ main {
         @include transition(all);
       }
     }
-  }
+
+    .container-flex-subtitle{
+      align-items: flex-start; 
+      margin-left: 5%;
+    }
+
+    .container-flex-books{
+      display:grid;
+      grid-template-columns: auto repeat(4, 1fr) auto;
+      grid-template-rows: auto auto;
+
+      @media(max-width: 1450px){
+        grid-template-columns: auto repeat(3, 1fr) auto;
+      }
+      
+      @media(max-width: 1060px){
+        grid-template-columns: auto repeat(2, 1fr) auto;
+      }
+  
+      @media(max-width: 750px){
+        grid-template-columns: auto repeat(1, 1fr) auto;
+        }
+
+      .fa-circle-chevron-left{
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .fa-circle-chevron-right{
+        grid-column: 6;
+        grid-row: 1;
+      }
+
+      .book_info{
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+
+      &:nth-of-type(2) {
+          grid-column: 2;
+      }
+
+      &:nth-of-type(4) {
+          grid-column: 3;
+      }
+
+      &:nth-of-type(6) {
+          grid-column: 4;
+      }
+
+      &:nth-of-type(8) {
+          grid-column: 5;
+      }
+
+      button{
+        align-self: center;
+      }
+
+      @media(max-width: 1450px){
+        &:nth-of-type(8) {
+          display: none; // Oculta el cuarto artículo en pantallas menores a 1380px
+      }
+      }
+  
+      @media(max-width: 1060px){
+        &:nth-of-type(6) {
+          display: none; // Oculta el tercer artículo en pantallas menores a 1000px
+      }
+      }
+  
+      @media(max-width: 750px){
+        &:nth-of-type(4) {
+          display: none; // Oculta el segundo artículo en pantallas menores a 700px
+      }
+        }
+
+      }
+    }
+
+    
+  } 
