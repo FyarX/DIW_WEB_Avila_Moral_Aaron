@@ -11,15 +11,17 @@ $colorFondo: var.$bg-main;
 main {
     display: flex;
     flex-direction: column; 
-    gap: 100px; // Espacio entre las secciones
+    gap: 75px; // Espacio entre las secciones
     font-family: 'Roboto', sans-serif;
     background-color: #{$colorFondo};
-    height: 2850px;
+    height: 2700px;
     width: 100%;
+
+    @media(max-width: 750px){
+      gap: 60px;
+      }
   
     section{
-      display: flex;
-      justify-content: center;
       align-items: center;
     }
 
@@ -51,27 +53,7 @@ main {
         gap: 50px;
       }   
     }
-  
-      .top10mark {
-        height: 30px;
-        width: 30px;
-        padding: 6px;
-        text-align: center;
-        font-weight: bold; // Aplica negrita al texto
-        color: white;
-        background-color: var.$primary;
-        position: absolute; // Posiciona el elemento de forma absoluta en relación al contenedor
-        transform: translate(-450%, -625%);
-        @include border-radius(50%);
-
-        @media(max-width: 420px){
-          transform: translate(-325%, -510%);
-        }
-      }
       
-      .subtitle_ult {
-        margin-top: 20px;
-      }
 
       //? Creación de clase auxiliar para heredar en el resto de subtítulos
       .subtitle_base{
@@ -122,39 +104,32 @@ main {
           }
         
       }
-
-    .fa-circle-chevron-left,
-    .fa-circle-chevron-right {
   
-      &:hover {
-        font-size: 55px; // Aumenta el tamaño del icono al pasar el ratón por encima
-        @include transition(font-size);
+    .top10mark {
+      height: 30px;
+      width: 30px;
+      padding: 6px;
+      text-align: center;
+      font-weight: bold; // Aplica negrita al texto
+      color: white;
+      background-color: var.$primary;
+      position: absolute; // Posiciona el elemento de forma absoluta en relación al contenedor
+      transform: translate(-450%, -625%);
+      @include border-radius(50%);
+
+      @media(max-width: 390px){
+        transform: translate(-400%,-595%);
       }
     }
-  
-    .fa-circle-chevron-left {
-      align-items: center;
 
-      @media(max-width: 420px){
-        margin-left: 3%;
-      }
-    }
-  
-    .fa-circle-chevron-right {
-      align-items: center;
 
-      @media(max-width: 420px){
-        margin-right: 3%;
-      }
-    }
-  
     .book_cover {
       height: 375px;
       width: 270px;
 
-      @media(max-width: 420px){
-        height: 305px;
-        width: 200px;
+      @media(max-width: 390px){
+        height: 355px;
+        width: 250px;
       }
     }
   
@@ -164,8 +139,9 @@ main {
       text-align: center;
       font-weight: bold;
 
-      @media(max-width: 420px){
+      @media(max-width: 390px){
         width: 80%;
+        margin: 0px auto;
       }
     }
   
@@ -179,6 +155,7 @@ main {
       padding: 10px;
       font-weight: bold;
       margin-top: 10px;
+      align-self: center;
   
       &:hover {
         padding: 12px;
@@ -209,20 +186,29 @@ main {
         grid-template-columns: auto repeat(1, 1fr) auto;
         }
 
-      .fa-circle-chevron-left{
-        grid-column: 1;
-        grid-row: 1;
-      }
+    .fa-circle-chevron-left{
+      grid-column: 1;
+      grid-row: 1;
+    }
 
-      .fa-circle-chevron-right{
-        grid-column: 6;
-        grid-row: 1;
-      }
+    .fa-circle-chevron-right{
+      grid-column: 6;
+      grid-row: 1;
+    }
 
-      .book_info{
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
+    .fa-circle-chevron-left,
+    .fa-circle-chevron-right {
+  
+      &:hover {
+        font-size: 55px; // Aumenta el tamaño del icono al pasar el ratón por encima
+        @include transition(font-size);
+      }
+    }
+
+    .book_info{
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
 
       &:nth-of-type(2) {
           grid-column: 2;
@@ -240,30 +226,24 @@ main {
           grid-column: 5;
       }
 
-      button{
-        align-self: center;
-      }
-
       @media(max-width: 1450px){
         &:nth-of-type(8) {
           display: none; // Oculta el cuarto artículo en pantallas menores a 1380px
-      }
+        }
       }
   
       @media(max-width: 1060px){
         &:nth-of-type(6) {
           display: none; // Oculta el tercer artículo en pantallas menores a 1000px
-      }
+        }
       }
   
       @media(max-width: 750px){
         &:nth-of-type(4) {
           display: none; // Oculta el segundo artículo en pantallas menores a 700px
-      }
         }
+      }
 
       }
     }
-
-    
   } 
