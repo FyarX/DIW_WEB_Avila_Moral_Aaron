@@ -80,9 +80,6 @@ main .main_sections section:first-of-type {
   align-self: flex-start;
   gap: 50px;
 }
-main .subtitle_ult {
-  margin-top: 20px;
-}
 main .subtitle_base, main .subtitle_todos, main .subtitle_imprescindibles, main .subtitle_revelacion {
   float: left;
 }
@@ -497,6 +494,11 @@ header #navbar ul li a:hover {
   }
 }
 
+.proximamente_main {
+  display: flex;
+  flex-direction: row;
+}
+
 .proximamente_article {
   display: flex;
   gap: 20px;
@@ -504,30 +506,33 @@ header #navbar ul li a:hover {
   border-radius: 10px;
   margin: 20px 3%;
 }
-.proximamente_article .book_cover {
+
+.book_cover {
   height: 320px;
   width: 215px;
   height: auto;
   border-radius: 5px;
 }
-.proximamente_article .book_title {
+
+.book_title {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.proximamente_article .book_author {
+
+.book_author {
   font-size: 1rem;
 }
-.proximamente_article .release_date {
+
+.release_date {
   background: #5a3314;
   color: white;
   font-weight: bold;
   font-size: 0.9rem;
   padding: 5px 12px;
-  border-radius: 10px;
   display: inline-block;
   margin-top: 5px;
 }
-.proximamente_article .release_date::after {
+.release_date::after {
   content: "";
   position: absolute;
   right: -10px;
@@ -539,6 +544,32 @@ header #navbar ul li a:hover {
   border-bottom: 10px solid transparent;
   border-left: 10px solid #5a3314;
 }
+
+.reserva_btn {
+  background: #5a3314;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 5px 12px;
+  display: inline-block;
+  margin-top: 5px;
+  position: relative;
+}
+
+.book_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.book_name_author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .new_mark {
   background-color: green;
   position: absolute;
@@ -548,21 +579,14 @@ header #navbar ul li a:hover {
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: translate(0%, 50%);
-  -webkit-transform: translate(0%, 50%);
-  -moz-transform: translate(0%, 50%);
-  -ms-transform: translate(0%, 50%);
-  -o-transform: translate(0%, 50%);
-}
-
-.subtitle_base, .subtitle_noficcion, .subtitle_fantasia, .subtitle_thriller {
-  margin-top: 200px;
-  margin-left: 50px;
+  transform: translate(-114%, -430%);
+  -webkit-transform: translate(-114%, -430%);
+  -moz-transform: translate(-114%, -430%);
+  -ms-transform: translate(-114%, -430%);
+  -o-transform: translate(-114%, -430%);
 }
 
 .subtitle_ultimo {
-  margin-left: 50px;
-  margin-top: 20px;
   width: 330px;
 }
 

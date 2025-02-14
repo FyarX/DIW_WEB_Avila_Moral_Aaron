@@ -1,10 +1,15 @@
+.proximamente_main{
+    display: flex;
+    flex-direction: row;
+}
+
 .proximamente_article {
     display: flex;
     gap: 20px;
     padding: 15px;
     border-radius: 10px;
     margin: 20px 3%;
-
+}
     .book_cover {
         height: 320px;
         width: 215px;
@@ -27,7 +32,6 @@
             font-weight: bold; // Negrita
             font-size: 0.9rem; // Tamaño de fuente
             padding: 5px 12px; // Espaciado interno
-            border-radius: 10px; // Bordes redondeados
             display: inline-block; // Evita que se expanda al 100%
             margin-top: 5px; // Espacio superior
 
@@ -46,11 +50,29 @@
         
     }
 
-    .book_synopsis{
-
-    }
-
+    
     .reserva_btn{
+        background: #5a3314; // Color de fondo (marrón oscuro)
+        color: white; // Texto en blanco
+        font-weight: bold; // Negrita
+        font-size: 0.9rem; // Tamaño de fuente
+        padding: 5px 12px; // Espaciado interno
+        display: inline-block; // Evita que se expanda al 100%
+        margin-top: 5px; // Espacio superior
+        position: relative; // Necesario para el pseudo-elemento
 
     }
+
+.book_header{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book_name_author{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
