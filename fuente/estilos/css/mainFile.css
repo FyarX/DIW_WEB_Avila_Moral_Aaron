@@ -496,15 +496,44 @@ header #navbar ul li a:hover {
 
 .proximamente_main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  max-width: 1685px;
+  margin: 0px auto;
+}
+.proximamente_main:last-child {
+  margin-bottom: 100px;
+}
+@media (max-width: 1085px) {
+  .proximamente_main {
+    margin: 0;
+  }
+}
+@media (max-width: 690px) {
+  .proximamente_main {
+    gap: 20px;
+  }
+}
+
+#title_proximamente {
+  font-size: 50px;
 }
 
 .proximamente_article {
   display: flex;
-  gap: 20px;
+  gap: 3%;
   padding: 15px;
   border-radius: 10px;
   margin: 20px 3%;
+}
+@media (max-width: 690px) {
+  .proximamente_article {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.proximamente_img {
+  margin: 0px auto;
 }
 
 .book_cover {
@@ -514,60 +543,100 @@ header #navbar ul li a:hover {
   border-radius: 5px;
 }
 
-.book_title {
-  font-size: 1.3rem;
+.proximamente_info {
+  display: flex;
+  gap: 4%;
+  flex-direction: column;
+}
+@media (max-width: 1085px) {
+  .proximamente_info {
+    justify-content: center;
+    width: 370px;
+  }
+}
+@media (max-width: 690px) {
+  .proximamente_info {
+    width: 80%;
+  }
+}
+
+.book_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 3%;
+}
+.book_header .book_name_author {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 2px;
+}
+.book_header .book_name_author .book_title {
+  font-size: 35px;
   font-weight: bold;
+  text-align: left;
+}
+@media (max-width: 690px) {
+  .book_header .book_name_author .book_title {
+    font-size: 27px;
+  }
+}
+.book_header .book_name_author .book_author {
+  text-align: left;
+  font-size: 23px;
+}
+.book_header .release_date {
+  background-image: linear-gradient(to right, #4D2E1A, #6c3d17);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+}
+@media (max-width: 1085px) {
+  .book_header .release_date {
+    align-self: flex-start;
+    padding: 25px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 1085px) {
+  .book_header {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .book_author {
   font-size: 1rem;
 }
 
-.release_date {
-  background: #5a3314;
-  color: white;
-  font-weight: bold;
-  font-size: 0.9rem;
-  padding: 5px 12px;
-  display: inline-block;
-  margin-top: 5px;
+.book_synopsis {
+  font-size: 20px;
 }
-.release_date::after {
-  content: "";
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #5a3314;
+@media (max-width: 1085px) {
+  .book_synopsis {
+    display: none;
+  }
 }
 
 .reserva_btn {
-  background: #5a3314;
+  background: #8B4513;
   color: white;
   font-weight: bold;
-  font-size: 0.9rem;
-  padding: 5px 12px;
-  display: inline-block;
+  font-size: 24px;
+  padding: 15px;
   margin-top: 5px;
   position: relative;
+  align-self: flex-end;
 }
-
-.book_header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.book_name_author {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+@media (max-width: 1085px) {
+  .reserva_btn {
+    width: 100%;
+  }
 }
 
 .new_mark {

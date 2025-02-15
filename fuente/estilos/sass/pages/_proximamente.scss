@@ -1,15 +1,50 @@
+//? Llamada a elementos externos
+@use '../global/variables' as var;
+@use '../base/font';
+@import '../global/mixins';
+@import '../global/functions';
+
 .proximamente_main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 1685px;
+    margin: 0px auto;
+
+    &:last-child{
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: 1085px){
+        margin: 0;
+    }
+
+    @media (max-width: 690px){
+        gap: 20px;
+    }
+
 }
+
+#title_proximamente{
+    font-size: 50px;
+}
+
 
 .proximamente_article {
     display: flex;
-    gap: 20px;
+    gap: 3%;
     padding: 15px;
     border-radius: 10px;
     margin: 20px 3%;
+
+    @media (max-width: 690px){
+        flex-direction: column;
+        gap:15px;
+    }
 }
+    .proximamente_img{
+        margin: 0px auto;
+    }
+
     .book_cover {
         height: 320px;
         width: 215px;
@@ -17,62 +52,102 @@
         border-radius: 5px;
     }
 
-    .book_title {
-        font-size: 1.3rem;
-        font-weight: bold;
+
+    .proximamente_info{
+        display: flex
+;       gap: 4%;
+        flex-direction: column;
+
+        @media (max-width: 1085px){
+            justify-content: center;
+            width: 370px;
+        }
+
+        @media (max-width: 690px){
+            width: 80%;
+        }
+    }
+
+
+
+    .book_header{   
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 3%;
+
+        .book_name_author{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            gap: 2px;
+
+            .book_title {
+                font-size: 35px;
+                font-weight: bold;
+                text-align: left;
+
+                @media (max-width: 690px){
+                    font-size: 27px;
+                }
+            }
+
+            .book_author {
+                text-align: left;
+                font-size: 23px;
+            }
+        }
+
+        .release_date{
+            background-image: linear-gradient(to right, var.$secondary, #6c3d17); // Degradado de colores  
+            color: white; 
+            font-weight: bold; // Negrita
+            font-size: 20px; 
+            padding: 15px; 
+            display: inline-block; // Evita que se expanda al 100% 
+            text-align: center; // Centra el texto    
+
+            @media (max-width: 1085px){
+                align-self: flex-start;
+                padding: 25px;
+                font-size: 25px;
+            }
+        }
+
+    @media (max-width: 1085px){
+        flex-direction: column;
+        gap: 20px;
+    }
+
+        
     }
 
     .book_author {
         font-size: 1rem;
     }
 
-    .release_date{
-            background: #5a3314; // Color de fondo (marrón oscuro)
-            color: white; // Texto en blanco
-            font-weight: bold; // Negrita
-            font-size: 0.9rem; // Tamaño de fuente
-            padding: 5px 12px; // Espaciado interno
-            display: inline-block; // Evita que se expanda al 100%
-            margin-top: 5px; // Espacio superior
+    .book_synopsis{
+        font-size: 20px;
 
-            &::after {
-                content: "";
-                position: absolute;
-                right: -10px; // Ajuste para que encaje
-                top: 50%;
-                transform: translateY(-50%);
-                width: 0;
-                height: 0;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-                border-left: 10px solid #5a3314; // Triángulo con mismo color de fondo
-            }
-        
+        @media (max-width: 1085px){
+            display: none;
+        }
     }
 
-    
     .reserva_btn{
-        background: #5a3314; // Color de fondo (marrón oscuro)
-        color: white; // Texto en blanco
+        background: var.$primary; 
+        color: white; 
         font-weight: bold; // Negrita
-        font-size: 0.9rem; // Tamaño de fuente
-        padding: 5px 12px; // Espaciado interno
-        display: inline-block; // Evita que se expanda al 100%
+        font-size: 24px; 
+        padding: 15px; // Espaciado interno
         margin-top: 5px; // Espacio superior
         position: relative; // Necesario para el pseudo-elemento
+        align-self: flex-end; // Alinea el botón a la derecha
 
+        @media (max-width: 1085px){
+            width: 100%;
+        }
     }
 
-.book_header{
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
-.book_name_author{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
