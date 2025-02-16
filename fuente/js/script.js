@@ -19,3 +19,19 @@ function actualizarBusqueda() {
 
   // Llama a la función cuando la ventana cambia de tamaño
   window.addEventListener("resize", actualizarBusqueda);
+
+
+
+  // Cambiar el color del botón clicado
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.categorias_btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remover la clase 'active' de todos los botones
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Agregar la clase 'active' al botón clicado
+            this.classList.add('active');
+        });
+    });
+});

@@ -40,7 +40,6 @@ main {
   gap: 75px;
   font-family: "Roboto", sans-serif;
   background-color: #FFEBCD;
-  height: 2700px;
   width: 100%;
 }
 @media (max-width: 750px) {
@@ -79,6 +78,9 @@ main .main_sections {
 main .main_sections section:first-of-type {
   align-self: flex-start;
   gap: 50px;
+}
+main .main_sections:last-of-type {
+  margin-bottom: 100px;
 }
 main .subtitle_base, main .subtitle_todos, main .subtitle_imprescindibles, main .subtitle_revelacion {
   float: left;
@@ -494,6 +496,77 @@ header #navbar ul li a:hover {
   }
 }
 
+#categorias_title {
+  font-size: 50px;
+}
+
+.categorias_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1685px;
+  margin: 0px auto;
+  width: 100%;
+}
+.categorias_section:last-of-type {
+  margin-bottom: 75px;
+}
+.categorias_section .subtitle_categorias {
+  width: unset;
+  align-self: center;
+  font-size: 35px;
+}
+.categorias_section .categorias_container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  justify-content: center;
+  background-color: #8B4513;
+  border: 8px solid black;
+  padding: 25px;
+  flex-wrap: wrap;
+  width: 69%;
+}
+@media (max-width: 960px) {
+  .categorias_section .categorias_container {
+    padding: 10px;
+  }
+}
+.categorias_section .categorias_container .categorias_generos {
+  display: none;
+}
+@media (max-width: 960px) {
+  .categorias_section .categorias_container .categorias_generos {
+    display: flex;
+    font-size: 35px;
+    color: white;
+  }
+  .categorias_section .categorias_container .categorias_generos .fa-angle-down {
+    color: black;
+  }
+}
+.categorias_section .categorias_container .categorias_btn {
+  border: 4px solid white;
+  border-radius: 25px;
+  padding: 17px 35px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.categorias_section .categorias_container .categorias_btn.active {
+  background-color: white;
+  color: #8B4513;
+  transition: 700ms ease;
+  -webkit-transition: 700ms ease;
+  -moz-transition: 700ms ease;
+  -ms-transition: 700ms ease;
+  -o-transition: 700ms ease;
+}
+@media (max-width: 960px) {
+  .categorias_section .categorias_container .categorias_btn {
+    display: none;
+  }
+}
+
 .proximamente_main {
   display: flex;
   flex-direction: column;
@@ -529,6 +602,7 @@ header #navbar ul li a:hover {
   .proximamente_article {
     flex-direction: column;
     gap: 15px;
+    width: 90%;
   }
 }
 
@@ -556,7 +630,7 @@ header #navbar ul li a:hover {
 }
 @media (max-width: 690px) {
   .proximamente_info {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -577,10 +651,11 @@ header #navbar ul li a:hover {
   font-size: 35px;
   font-weight: bold;
   text-align: left;
+  width: 100%;
 }
 @media (max-width: 690px) {
   .book_header .book_name_author .book_title {
-    font-size: 27px;
+    font-size: 32px;
   }
 }
 .book_header .book_name_author .book_author {
@@ -677,4 +752,18 @@ header #navbar ul li a:hover {
 #novedades_noficcion {
   display: flex;
   margin-top: 10px;
+}
+
+.reco_personalizadas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  float: right;
+}
+
+.cover_personalizadas {
+  background-color: black;
+  padding: 10px 20px;
+  height: 375px;
+  width: 270px;
 }/*# sourceMappingURL=mainFile.css.map */

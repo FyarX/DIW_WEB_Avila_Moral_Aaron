@@ -39,6 +39,7 @@
     @media (max-width: 690px){
         flex-direction: column;
         gap:15px;
+        width: 90%;
     }
 }
     .proximamente_img{
@@ -64,7 +65,7 @@
         }
 
         @media (max-width: 690px){
-            width: 80%;
+            width: 100%;
         }
     }
 
@@ -87,9 +88,10 @@
                 font-size: 35px;
                 font-weight: bold;
                 text-align: left;
+                width: 100%;
 
                 @media (max-width: 690px){
-                    font-size: 27px;
+                    font-size: 32px;
                 }
             }
 

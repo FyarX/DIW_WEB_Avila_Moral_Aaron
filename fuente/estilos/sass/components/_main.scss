@@ -14,7 +14,6 @@ main {
     gap: 75px; // Espacio entre las secciones
     font-family: 'Roboto', sans-serif;
     background-color: #{$colorFondo};
-    height: 2700px;
     width: 100%;
 
     @media(max-width: 750px){
@@ -52,6 +51,10 @@ main {
         align-self: flex-start; // Alinea la primera sección a la izquierda
         gap: 50px;
       }   
+
+      &:last-of-type {
+        margin-bottom: 100px;
+      }
     }
       
 
