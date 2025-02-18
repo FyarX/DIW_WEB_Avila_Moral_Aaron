@@ -1,0 +1,82 @@
+//? Llamada a elementos externos
+@use '../global/variables' as var;
+@use '../base/font';
+@import '../global/mixins';
+@import '../global/functions';
+
+#oferta_pc_tablet_img{
+    @media(max-width: 860px){
+        display: none;
+    }
+}
+
+#oferta_movil_img{
+    display: none;
+
+    @media(max-width: 860px){
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    @media(max-width: 500px){
+        width: 300px;
+    }
+}
+
+.main_sections_ofertas {
+    display: flex; // Alinea los elementos horizontalmente
+    flex-direction: column; // Alinea los elementos verticalmente
+    gap: 50px;
+    
+    &:first-child {
+      gap: 20px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 100px;
+    }
+  }
+
+.container_subtitle_and_ofertas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1685px;
+    margin: 0px auto;
+    width: 100%;  
+
+}
+
+.container-flex-ofertas{
+    display: flex;
+    align-self: flex-start; 
+    gap: 3%;
+    margin-left: 5%;
+    
+
+    @media(max-width: 680px){
+        margin: 0px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.subtitle_descuentos_tl{
+    width: 344px;
+    align-self: center;
+    
+    @media (max-width: 500px){
+        width: 300px;
+        text-align: center;
+    }
+}
+
+#time_container{
+    color:white;
+    background-color: var.$primary;
+    border: 4px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+}

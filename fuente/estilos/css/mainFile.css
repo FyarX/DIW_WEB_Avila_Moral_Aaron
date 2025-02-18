@@ -184,6 +184,7 @@ main button:hover {
   -o-transition: all 300ms ease;
 }
 main .container-flex-subtitle {
+  display: flex;
   align-items: flex-start;
   margin-left: 5%;
 }
@@ -540,6 +541,9 @@ header #navbar ul li a:hover {
     display: flex;
     font-size: 35px;
     color: white;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
   }
   .categorias_section .categorias_container .categorias_generos .fa-angle-down {
     color: black;
@@ -565,6 +569,83 @@ header #navbar ul li a:hover {
   .categorias_section .categorias_container .categorias_btn {
     display: none;
   }
+}
+
+@media (max-width: 860px) {
+  #oferta_pc_tablet_img {
+    display: none;
+  }
+}
+
+#oferta_movil_img {
+  display: none;
+}
+@media (max-width: 860px) {
+  #oferta_movil_img {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 500px) {
+  #oferta_movil_img {
+    width: 300px;
+  }
+}
+
+.main_sections_ofertas {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main_sections_ofertas:first-child {
+  gap: 20px;
+}
+.main_sections_ofertas:last-of-type {
+  margin-bottom: 100px;
+}
+
+.container_subtitle_and_ofertas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1685px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.container-flex-ofertas {
+  display: flex;
+  align-self: flex-start;
+  gap: 3%;
+  margin-left: 5%;
+}
+@media (max-width: 680px) {
+  .container-flex-ofertas {
+    margin: 0px auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.subtitle_descuentos_tl {
+  width: 344px;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .subtitle_descuentos_tl {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+#time_container {
+  color: white;
+  background-color: #8B4513;
+  border: 4px solid black;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
 }
 
 .proximamente_main {
