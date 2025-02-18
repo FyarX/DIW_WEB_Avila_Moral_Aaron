@@ -840,11 +840,32 @@ header #navbar ul li a:hover {
   flex-direction: column;
   gap: 10px;
   float: right;
+  margin-right: 5%;
+}
+
+.book_reco_personalizadas {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px 20px;
 }
 
 .cover_personalizadas {
-  background-color: black;
-  padding: 10px 20px;
   height: 375px;
   width: 270px;
+}
+
+#marker_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.ebook_marker {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }/*# sourceMappingURL=mainFile.css.map */
