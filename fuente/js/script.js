@@ -34,4 +34,16 @@ function actualizarBusqueda() {
             this.classList.add('active');
         });
     });
+
+
+    const markers = document.querySelectorAll('.ebook_marker');
+
+    markers.forEach(marker => {
+        marker.addEventListener('click', function() {
+            // Quitar la clase 'active' de todos los botones
+            markers.forEach(mrk => mrk.classList.remove('active'));
+            // Agregar la clase 'active' al botón clicado
+            this.classList.add('active');
+        });
+    });
 });

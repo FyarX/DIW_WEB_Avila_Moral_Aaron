@@ -1,16 +1,75 @@
-.reco_personalizadas{
+#recomendado_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1675px;
+    margin: 0px auto;
+    gap: 10%;
+
+    @media (max-width: 1250px){
+        gap: 7%;
+    }
+
+    @media (max-width: 960px){
+        flex-direction: column;
+        gap: 90px;
+    }
+}
+.main_sections_reco{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    flex: 3;
+    order: 1;
+
+    @media (max-width: 960px){
+        order: 2;
+    }
+
+    .container-flex-books{
+        grid-template-columns: auto repeat(2, 1fr) auto;
+        gap: 5px;
+
+        @media (max-width: 1650px){
+            grid-template-columns: auto repeat(1, 1fr) auto;
+
+            .book_article:nth-of-type(3){
+                display: none;
+            }
+
+            .book_info:nth-of-type(4){
+                display: none;
+            }
+
+        }
+    }
+}
+.reco_personalizadas{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     float: right;
     margin-right: 5%;
+    order: 2;
+    
+    @media (max-width: 960px){
+        order: 1;
+        margin: 0px auto;
+    }
+}
+
+.subtitle_personalizadas{
+    width: 115px;
+    margin-left: 0px;
 }
 
 .book_reco_personalizadas{
     display: flex;
     flex-direction: column;
     background-color: black;
-    padding: 20px 20px 20px;
+    padding: 30px 30px 20px;
+    border-radius: 6%;
 }
 
 .cover_personalizadas{
@@ -31,4 +90,9 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    background-color: white;
+
+    &.active {
+        background-color: #5e5e5e; // Color gris clarito cuando se clica
+    }
 }
