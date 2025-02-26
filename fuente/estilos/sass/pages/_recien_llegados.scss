@@ -14,34 +14,19 @@
     -o-transform: translate(-114%, -430%);
 }
 
-
-// .subtitle_base{
-//     margin-top: 200px;
-//     margin-left: 50px;
-
-//   }
-
   .subtitle_ultimo{
     width:330px; // Ajusta el ancho del contenedor a la cantidad de texto
   }
 
   .subtitle_thriller{
-    // @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
     width:260px; // Ajusta el ancho del contenedor a la cantidad de texto
   } 
 
   .subtitle_fantasia{
-    // @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
     width:265px; // Ajusta el ancho del contenedor a la cantidad de texto
-
-    // @media(max-width: 730px){ // En pantallas pequeñas se reduce el tamaño del texto
-    //   font-size: 20px;
-    //   width: 280px; 
-    // }
   }
 
   .subtitle_noficcion{
-    // @extend .subtitle_base; // Hereda las propiedades de .subtitle_base
     width:285px; // Ajusta el ancho del contenedor a la cantidad de texto
   }
   
