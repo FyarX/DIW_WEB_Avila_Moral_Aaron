@@ -73,15 +73,6 @@
       align-items: center;
       gap: 15px; // Espacio entre elementos
   
-      a {
-        display: inline-flex; // Alinear los elementos en línea
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-        color: white;
-        text-decoration: none;
-      }
-  
       .social_media_icons {
         display: flex;
         gap: 15px;
