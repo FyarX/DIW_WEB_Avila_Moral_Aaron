@@ -17,7 +17,7 @@
 }
 .main_sections_reco{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; // Para que los elementos se coloquen uno debajo del otro
     gap: 20px;
     flex: 3;
     order: 1;
@@ -27,18 +27,18 @@
     }
 
     .container-flex-books{
-        grid-template-columns: auto repeat(2, 1fr) auto;
+        grid-template-columns: auto repeat(2, 1fr) auto; // 2 columnas
         gap: 5px;
 
         @media (max-width: 1650px){
-            grid-template-columns: auto repeat(1, 1fr) auto;
+            grid-template-columns: auto repeat(1, 1fr) auto; // 1 columna
 
             .book_article:nth-of-type(3){
-                display: none;
+                display: none; // Ocultar el segundo libro
             }
 
             .book_info:nth-of-type(4){
-                display: none;
+                display: none; // Ocultar la información del segundo libro
             }
 
         }
@@ -49,12 +49,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    float: right;
+    float: right; // Para que se coloque a la derecha
     margin-right: 5%;
     order: 2;
     
     @media (max-width: 960px){
-        order: 1;
+        order: 1; // Para que se coloque arriba
         margin: 0px auto;
     }
 }
@@ -85,7 +85,7 @@
 }
 
 .ebook_marker{
-    border-radius: 50%;
+    border-radius: 50%; // Para que sea un círculo
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;

@@ -38,8 +38,8 @@
   }
 
 .container_subtitle_and_ofertas{
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; // Alinea los elementos verticalmente
     gap: 20px;
     max-width: 1685px;
     margin: 0px auto;
@@ -49,7 +49,7 @@
 
 .container-flex-ofertas{
     display: flex;
-    align-self: flex-start; 
+    align-self: flex-start; // Alinea los elementos a la izquierda
     gap: 3%;
     margin-left: 5%;
     
