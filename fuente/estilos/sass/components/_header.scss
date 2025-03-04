@@ -1,7 +1,7 @@
 //? Llamada a elementos externos
 @use '../global/variables' as var;
 @use '../base/font';
-@import '../global/mixins';
+@use '../global/mixins';
 
 
 //! Estilos del header
@@ -47,7 +47,7 @@ header {
       position: relative; 
       background-color: var.$secondary;
       border: 1px solid white; // Se aplica un borde blanco al input
-      @include border-radius(11px);
+      @include mixins.border-radius(11px);
       margin: 0 auto; // Centra el input horizontalmente
       top: 40px;
 
@@ -67,7 +67,7 @@ header {
   
       &:hover {
         color: black; // Cambia el color del icono al pasar el ratón por encima
-        @include transition(color, 150ms);
+        @include mixins.transition(color, 150ms);
       }
 
       @media (min-width: 1700px) {
@@ -136,7 +136,7 @@ header {
             &:hover {
               font-size: 18px; // Al pasar el ratón por encima, el tamaño de la fuente aumenta
               color: black; // Cambia el color del texto al pasar el ratón por encima
-              @include transition(font-size, 200ms);
+              @include mixins.transition(font-size, 200ms);
             }
           }
         }

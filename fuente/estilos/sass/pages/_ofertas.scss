@@ -1,8 +1,8 @@
 //? Llamada a elementos externos
 @use '../global/variables' as var;
 @use '../base/font';
-@import '../global/mixins';
-@import '../global/functions';
+@use '../global/mixins';
+@use '../global/functions';
 
 #oferta_pc_tablet_img{
     @media(max-width: 860px){

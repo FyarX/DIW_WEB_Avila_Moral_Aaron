@@ -1,8 +1,8 @@
 //? Llamada a elementos externos
 @use '../global/variables' as var;
 @use '../base/font';
-@import '../global/mixins';
-@import '../global/functions';
+@use '../global/mixins';
+@use '../global/functions';
 
 //? Asignacion de variable para interpolación
 $colorFondo: var.$bg-main;
@@ -35,7 +35,7 @@ main {
       font-family: var.$font-base;
       border-bottom: 7px solid var.$secondary;
       align-self: flex-start; // Alinea el texto arriba a la izquierda
-      @include border-radius(10%);
+      @include mixins.border-radius(10%);
       width: 150px;
     }
   
@@ -118,7 +118,7 @@ main {
       background-color: var.$primary;
       position: absolute; // Posiciona el elemento de forma absoluta en relación al contenedor
       transform: translate(-450%, -625%);
-      @include border-radius(50%);
+      @include mixins.border-radius(50%);
 
       @media(max-width: 390px){
         transform: translate(-400%,-595%);
@@ -163,7 +163,7 @@ main {
       &:hover {
         padding: 12px;
         font-size: agrandarElemento(20px); // Llama a la función agrandarElemento que aumenta el tamaño del texto
-        @include transition(all);
+        @include mixins.transition(all);
       }
     }
 
@@ -205,7 +205,7 @@ main {
   
       &:hover {
         font-size: 55px; // Aumenta el tamaño del icono al pasar el ratón por encima
-        @include transition(font-size);
+        @include mixins.transition(font-size);
       }
     }
 

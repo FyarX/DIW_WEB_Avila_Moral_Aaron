@@ -1,8 +1,8 @@
 //? Llamada a elementos externos
 @use '../global/variables' as var;
 @use '../base/font';
-@import '../global/mixins';
-@import '../global/functions';
+@use '../global/mixins';
+@use '../global/functions';
 
 .proximamente_main{
     display: flex;

@@ -1,7 +1,7 @@
 //? Llamada a elementos externos
 @use '../global/variables' as var;
 @use '../base/font' as font;
-@import '../global/mixins';
+@use '../global/mixins';
 
 //! Estilos del footer
 #footer {
@@ -52,7 +52,7 @@
   
         &:hover {
           color: var.$text-hover; // Cambiar color al pasar el ratón
-          @include transition(color, 200ms); // Efecto de transición
+          @include mixins.transition(color, 200ms); // Efecto de transición
         }
   
         i {

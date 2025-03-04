@@ -176,7 +176,7 @@ main button {
 }
 main button:hover {
   padding: 12px;
-  font-size: 22px;
+  font-size: agrandarElemento(20px);
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -901,7 +901,7 @@ header #navbar ul li a:hover {
 
 .subtitle_personalizadas {
   width: 115px;
-  margin-left: 0;
+  margin-left: 0px;
 }
 
 .book_reco_personalizadas {

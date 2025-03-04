@@ -2,13 +2,15 @@
   "name": "proyecto_libreria",
   "version": "1.0.0",
   "scripts": {
-    "dev": "parcel fuente/index.html",
-    "build": "parcel build fuente/index.html"
+    "dev": "parcel fuente/index.html --dist-dir des",
+    "build": "parcel build fuente/index.html --dist-dir prod",
+    "clean": "rimraf .parcel-cache des prod"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3"
   }
 }
